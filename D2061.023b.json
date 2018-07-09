@@ -1,0 +1,105 @@
+{
+    "UniqueID": "db6a7257-0ae1-46e3-88a3-4554f2b9d22a",
+    "ID": "D2061.023b",
+    "Description": "Costing based upon 1000 ft segments of pipe, pipe greater than 2.5 inches in diameter",
+    "BasicUnit": "Each",
+    "Name": "Steam Piping - Large Diameter Welded Steel - (greater than 2.5 inches in diameter), SDC D, E, or F, BRACING FRAGILITY",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Superior",
+        "Documentation": "Marginal",
+        "Rationality": "Marginal"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:12.2465683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Lateral Brace Failure - 1 failure per 1000 feet of pipe ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace failed lateral braces.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 700,
+                        "UpperQuantity": 500,
+                        "MinAmount": 210,
+                        "Uncertainty": 0.6488,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 1.9333,
+                        "UpperQuantity": 500,
+                        "MinAmount": 0.6267,
+                        "Uncertainty": 0.7803,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 1.5,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Vertical Brace Failure - 1 failure per 1000 feet of pipe ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace failed vertical braces ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 1000,
+                        "UpperQuantity": 500,
+                        "MinAmount": 300,
+                        "Uncertainty": 0.4695,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 2.3333,
+                        "UpperQuantity": 500,
+                        "MinAmount": 0.4667,
+                        "Uncertainty": 0.6028,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.25,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "UniqueID": "42059021-69c5-4504-83b7-0b4aa88fc7c3",
+    "ID": "D3032.013b",
+    "Description": "Costing is per unit.",
+    "BasicUnit": "Each",
+    "Name": "Compressor - Capacity: Small non medical air supply - Equipment that is either hard anchored or is vibration isolated with seismic snubbers/restraints - Equipment fragility only",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:24.3055683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Equipment does not function but anchorage is OK. Motor is damaged.",
+            "DamageImageName": "D3032.011a-DS1-1.JPG",
+            "DamageStates": {
+                "DSGroupType": "MutuallyExclusive",
+                "DamageState": [
+                    {
+                        "Name": null,
+                        "Description": "Equipment does not function but anchorage is OK. Motor is damaged.",
+                        "DamageImageName": "D3032.011a-DS1-1.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Repair motor.",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 825,
+                                "UpperQuantity": 4,
+                                "MinAmount": 675,
+                                "Uncertainty": 0.1723,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 2.5853,
+                                "UpperQuantity": 4,
+                                "MinAmount": 2.1147,
+                                "Uncertainty": 0.1714,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.5
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Equipment does not function but anchorage is OK. Equipment damaged beyond repair.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Replace equipment.",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 2970,
+                                "UpperQuantity": 4,
+                                "MinAmount": 2430,
+                                "Uncertainty": 0.2063,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 9.3171,
+                                "UpperQuantity": 4,
+                                "MinAmount": 7.6229,
+                                "Uncertainty": 0.2066,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.5
+                    }
+                ]
+            },
+            "Median": 1.84,
+            "Beta": 0.6
+        }
+    }
+}

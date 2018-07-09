@@ -1,0 +1,67 @@
+{
+    "UniqueID": "13b7b996-d33b-495c-83d6-b35d3e564a92",
+    "ID": "E2022.001",
+    "Description": "Unanchored and installed per manufacturer's recommendations on a carpeted floor.",
+    "BasicUnit": "Each",
+    "Name": "Modular office work stations.  ",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:55.9565683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "This component requires user specified cost and time consequence data.  Values within PACT are defaults (equal to zero) and do not represent actual consequence.\nImport errors:\n Warning, Data missing: E2022.001:DS1:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: E2022.001:DS1:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: E2022.001:DS1:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: E2022.001:DS1:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: E2022.001:DS1:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: E2022.001:DS1:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: E2022.001:DS1:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: E2022.001:DS1:Cost: Could not parse Dispersion - Assuming 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Wall units need to be adjusted and straightened.  Some elements are bent / damaged and need to be replaced.  ",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Adjust and or straightened wall units.  Replace damaged units.  Assume a repair cost of 5% of the replacement value.",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 1,
+            "Beta": 0.4
+        }
+    }
+}

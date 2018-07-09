@@ -1,0 +1,72 @@
+{
+    "UniqueID": "d9f267d6-e1a0-479d-98fa-e7e984e24159",
+    "ID": "E2022.021",
+    "Description": "Costing to be furnished by user.  Consequence data assumes 16 SF of damage area.",
+    "BasicUnit": "Each",
+    "Name": "Electronic equipment on wall mount brackets",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:57.4865683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "This component requires user specified cost and time consequence data.  Values within PACT are defaults (equal to zero) and do not represent actual consequence.\nImport errors:\n Warning, Data missing: E2022.021:DS1:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: E2022.021:DS1:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: E2022.021:DS1:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: E2022.021:DS1:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: E2022.021:DS1:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: E2022.021:DS1:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: E2022.021:DS1:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: E2022.021:DS1:Cost: Could not parse Dispersion - Assuming 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Falls, does not function.",
+            "DamageImageName": "E2022.020-DS1-1.JPG",
+            "ConsequenceGroup": {
+                "RepairMeasures": "Replace equipment.  User must supply replacement cost.",
+                "TagState": 0,
+                "UseCasualty": true,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": {
+                    "Area": {
+                        "Unit": "Square Foot",
+                        "Value": 16
+                    }
+                },
+                "AffectedDeathRate": 0.1,
+                "AffectedInjuryRate": 0.2,
+                "AffectedDeathRateBeta": 0.5,
+                "AffectedInjuryRateBeta": 0.5,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 2.5,
+            "Beta": 0.5
+        }
+    }
+}

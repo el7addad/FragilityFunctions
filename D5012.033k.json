@@ -1,0 +1,67 @@
+{
+    "UniqueID": "34015b97-124a-4269-a331-0dfb352a166f",
+    "ID": "D5012.033k",
+    "Description": "Costing is per unit and is based upon 1600 Amp.",
+    "BasicUnit": "Each",
+    "Name": "Distribution Panel - Capacity: 1200 to 2000 Amp - Equipment that is either hard anchored or is vibration isolated with seismic snubbers/restraints - Equipment fragility only",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:48.6735683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Damaged, inoperative but anchorage is OK.",
+            "DamageImageName": "D5012.031b-DS1-1.JPG",
+            "ConsequenceGroup": {
+                "RepairMeasures": "Replace equipment",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": true,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 56540,
+                    "UpperQuantity": 10,
+                    "MinAmount": 46260,
+                    "Uncertainty": 0.0683,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 64.1255,
+                    "UpperQuantity": 10,
+                    "MinAmount": 31.8745,
+                    "Uncertainty": 0.0688,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 3.05,
+            "Beta": 0.4
+        }
+    }
+}

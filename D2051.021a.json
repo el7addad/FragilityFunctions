@@ -1,0 +1,105 @@
+{
+    "UniqueID": "37afa816-b969-4c98-8441-9a1326b2002a",
+    "ID": "D2051.021a",
+    "Description": "Costing based upon 1000 ft segments of pipe, pipe greater than 2.5 inches in diameter",
+    "BasicUnit": "Each",
+    "Name": "Chilled Water Piping - Large Diameter Welded Steel - (greater than 2.5 inches in diameter), SDC A or B, PIPING FRAGILITY",
+    "Author": null,
+    "Correlation": 1,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:49:13.6405683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "Yes\nImport errors:\n Warning: D2051.021a: Could not parse Correlation - Assuming Correlated\nWarning: D2051.021a: Could not parse Demand Location - Using False\nWarning, Data missing: D2051.021a:DS1: Could not parse dispersion - using 0.5\nWarning, Data missing: D2051.021a:DS2: Could not parse dispersion - using 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Minor leakage at flange connections  -  1 leak per 1000  feet of pipe ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "NO",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 700,
+                        "UpperQuantity": 500,
+                        "MinAmount": 210,
+                        "Uncertainty": 0.6488,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 1.9608,
+                        "UpperQuantity": 500,
+                        "MinAmount": 0.6157,
+                        "Uncertainty": 0.7803,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 1.5,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Pipe Break - 1 break per 1000 feet of pipe",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "NO",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 6700,
+                        "UpperQuantity": 500,
+                        "MinAmount": 2010,
+                        "Uncertainty": 0.4038,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 18.1961,
+                        "UpperQuantity": 500,
+                        "MinAmount": 5.3216,
+                        "Uncertainty": 0.4178,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.6,
+                "Beta": 0.5
+            }
+        ]
+    }
+}

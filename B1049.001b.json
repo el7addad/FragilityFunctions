@@ -1,0 +1,105 @@
+{
+    "UniqueID": "02208fae-bd5f-43b6-a438-8e71dad705bb",
+    "ID": "B1049.001b",
+    "Description": "Costing per joint, minimum of 6\" thick slab, maximum of 12\" thick slab",
+    "BasicUnit": "Each",
+    "Name": "Reinforced concrete flat slabs- columns without shear reinforcing  0<Vg/Vo<.2, with continuity reinf",
+    "Author": "John Wallace",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Average",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:49.0965683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Yield strain of the slab flexural reinforcement has been exceeded, spalling of concrete may/may not occur, slab exhibits large enough crack widths to allow epoxy injection",
+                "DamageImageName": "B1049.001a-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove furnishings, ceilings and mechanical, electrical and plumping systems (as necessary) 5 feet either side of damaged area.  Replace and repair finishes.  Replace furnishings, ceilings and mechanical, electrical and plumping systems (as necessary).",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 39853,
+                        "UpperQuantity": 10,
+                        "MinAmount": 32607,
+                        "Uncertainty": 0.3475,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 98.4609,
+                        "UpperQuantity": 10,
+                        "MinAmount": 80.5591,
+                        "Uncertainty": 0.3475,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.025,
+                "Beta": 0.25
+            },
+            {
+                "Name": null,
+                "Description": "Punching occurs, causing significant spalling of concrete. Epoxy injection is no longer expected to be sufficient to restore the required strength and stiffness to the slab and the slab-column connection. ",
+                "DamageImageName": "B1049.001a-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Prepare work area for epoxy injection, inject epoxy into 40 feet of crack (30 feet top, 10 bottom of slab) of crack per 100 square feet of floor panel.  Fabricate new structural steel shear head (column capital) that attaches to the column beneath the slab. ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.2,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 44253,
+                        "UpperQuantity": 10,
+                        "MinAmount": 36207,
+                        "Uncertainty": 0.3266,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 109.3292,
+                        "UpperQuantity": 10,
+                        "MinAmount": 89.4508,
+                        "Uncertainty": 0.3266,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.04,
+                "Beta": 0.25
+            }
+        ]
+    }
+}

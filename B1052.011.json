@@ -1,0 +1,105 @@
+{
+    "UniqueID": "f60a33b3-6cdb-43cb-b63a-30542eb60177",
+    "ID": "B1052.011",
+    "Description": "Costing for each 100 ft^2 Wall Panel",
+    "BasicUnit": "Each",
+    "Name": "Special reinforced masonry walls with fully grouted cells, 16\" thick, shear dominated, up to 12' tall",
+    "Author": "Benson Shing",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "Marginal",
+        "Documentation": "Average",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:52.0805683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "First occurrence of major diagonal cracks.  Cracks remain closed with hardly noticeable residual crack widths after load removal. ",
+                "DamageImageName": "B1051.001-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Epoxy injection at cracks.  Paint each side.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 9,
+                        "MaxAmount": 4920,
+                        "UpperQuantity": 30,
+                        "MinAmount": 3280,
+                        "Uncertainty": 0.1076,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 9,
+                        "MaxAmount": 13.2188,
+                        "UpperQuantity": 30,
+                        "MinAmount": 8.7812,
+                        "Uncertainty": 0.1048,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0036,
+                "Beta": 0.59
+            },
+            {
+                "Name": null,
+                "Description": "Wide diagonal cracks with typically one or more cracks in each direction.  Crushing or spalling at wall toes. ",
+                "DamageImageName": "B1051.001-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Shore.  Demolish existing wall.  Construct new wall. ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 9,
+                        "MaxAmount": 10520,
+                        "UpperQuantity": 30,
+                        "MinAmount": 7013.3333,
+                        "Uncertainty": 0.1138,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 9,
+                        "MaxAmount": 28.7443,
+                        "UpperQuantity": 30,
+                        "MinAmount": 19.2557,
+                        "Uncertainty": 0.1033,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0059,
+                "Beta": 0.51
+            }
+        ]
+    }
+}

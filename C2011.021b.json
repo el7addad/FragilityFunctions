@@ -1,0 +1,141 @@
+{
+    "UniqueID": "a0708769-d941-4f6f-a8dd-28275bba9bce",
+    "ID": "C2011.021b",
+    "Description": "Cast in place concrete stair, no seismic interstory drift joint",
+    "BasicUnit": "Each",
+    "Name": "Monolithic cast-in-place and precast concrete stairs with no seismic joints - replace in kind if replacement is required.",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Marginal",
+        "Documentation": "Average",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:02.6005683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "User to provide median demand and dispersion values.  The values listed are default PACT values and do not represent the response of this component.\nImport errors:\n Warning, Data missing: C2011.021b:DS1: Could not parse median - using 500\nWarning, Data missing: C2011.021b:DS1: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.021b:DS2: Could not parse median - using 500\nWarning, Data missing: C2011.021b:DS2: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.021b:DS3: Could not parse median - using 500\nWarning, Data missing: C2011.021b:DS3: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.021b: DS2 Damage State has the same median as the previous damage state. - Replace damage states\nWarning, Data missing: C2011.021b: DS3 Damage State has the same median as the previous damage state. - Replace damage states\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Local concrete cracking, localized concrete spalling",
+                "DamageImageName": "C2011.011a-DS1-1.jpg",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "TBD",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 910,
+                        "UpperQuantity": 5,
+                        "MinAmount": 560,
+                        "Uncertainty": 0.8015,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 2.4965,
+                        "UpperQuantity": 5,
+                        "MinAmount": 1.5357,
+                        "Uncertainty": 0.8033,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Extensive concrete cracking, concrete crushing",
+                "DamageImageName": "C2011.011a-DS2-1.jpg",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "TBD",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 4810,
+                        "UpperQuantity": 5,
+                        "MinAmount": 2960,
+                        "Uncertainty": 0.5694,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 13.2071,
+                        "UpperQuantity": 5,
+                        "MinAmount": 8.1286,
+                        "Uncertainty": 0.5694,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Loss of live load capacity.  ",
+                "DamageImageName": "C2011.011a-DS2-1.jpg",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "TBD",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.1,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 32435,
+                        "UpperQuantity": 5,
+                        "MinAmount": 17465,
+                        "Uncertainty": 0.3432,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 89.0371,
+                        "UpperQuantity": 5,
+                        "MinAmount": 47.9429,
+                        "Uncertainty": 0.3432,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            }
+        ]
+    }
+}

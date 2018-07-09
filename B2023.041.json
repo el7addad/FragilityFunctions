@@ -1,0 +1,146 @@
+{
+    "UniqueID": "98de8f89-27b0-499a-8280-18a50b402b3c",
+    "ID": "B2023.041",
+    "Description": "None",
+    "BasicUnit": "Each",
+    "Name": "Storefront, Config: Symmetric insulating glass units (dual-pane, equal-thickness IGU), Lamination: Not laminated, Glass Type: Annealed, Details: 1 in. (25 mm) AN IGU; glass-frame clearance = 0.59 in. (15 mm); aspect ratio = 6:5 sealant = dry",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:58.3985683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Gasket seal failure.",
+                "DamageImageName": "B2022.003-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove glass panel and replace damaged gaskets.  ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 2055,
+                        "UpperQuantity": 100,
+                        "MinAmount": 1096,
+                        "Uncertainty": 0.1668,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 5.3729,
+                        "UpperQuantity": 100,
+                        "MinAmount": 2.8908,
+                        "Uncertainty": 0.1521,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0423,
+                "Beta": 0.3
+            },
+            {
+                "Name": null,
+                "Description": "Glass cracking.",
+                "DamageImageName": "B2022.001a-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace cracked glass panel.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 2955,
+                        "UpperQuantity": 100,
+                        "MinAmount": 1576,
+                        "Uncertainty": 0.1185,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 7.6494,
+                        "UpperQuantity": 100,
+                        "MinAmount": 4.0802,
+                        "Uncertainty": 0.1094,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.059,
+                "Beta": 0.25
+            },
+            {
+                "Name": null,
+                "Description": "Glass falls out.",
+                "DamageImageName": "B2022.001a-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace cracked glass panel; cover exposure in meantime.",
+                    "TagState": "Red",
+                    "UseCasualty": true,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": {
+                        "Area": {
+                            "Unit": "Square Foot",
+                            "Value": 36
+                        }
+                    },
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0.25,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0.5,
+                    "RedTagMedian": 0.5,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 2364,
+                        "UpperQuantity": 100,
+                        "MinAmount": 1674.5,
+                        "Uncertainty": 0.1185,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 6.1198,
+                        "UpperQuantity": 100,
+                        "MinAmount": 4.3352,
+                        "Uncertainty": 0.1094,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0665,
+                "Beta": 0.25
+            }
+        ]
+    }
+}

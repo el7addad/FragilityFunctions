@@ -1,0 +1,141 @@
+{
+    "UniqueID": "ceba3f61-cb21-4e8e-b6bd-2eb7f6600996",
+    "ID": "B1051.001b",
+    "Description": "None",
+    "BasicUnit": "Each",
+    "Name": "Concrete link beam, diagonally reinforced, aspect ratio between 2.0 and 4.0, beam < 16\" wide and depth < 30\"",
+    "Author": "John Wallace",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Link Beam Chord Rotation",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:50.1415683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None\nImport errors:\n Warning: B1051.001b: B1051.001b: DS2 overlaps DS3 in the range of 0.5075 to 3.01 - Make sure damage states are minimally overlapping\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Residual crakcs no greater than 1/16 inch.  Cracks are mainly at the beam to wall interface, some limited flexural cracking.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Epoxy inject crakcs (200 to 240 inches in length).",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 14280.3,
+                        "UpperQuantity": 20,
+                        "MinAmount": 7933.5,
+                        "Uncertainty": 0.6773,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 36.5824,
+                        "UpperQuantity": 20,
+                        "MinAmount": 20.1554,
+                        "Uncertainty": 0.6873,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.03,
+                "Beta": 0.39
+            },
+            {
+                "Name": null,
+                "Description": "Residual cracks greater than 1/8 inch and minor spalling of concrete.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Epoxy inject crakcs (600 to 720 inches) and slab (300 inches), replace spalled concrete.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 37584,
+                        "UpperQuantity": 20,
+                        "MinAmount": 20880,
+                        "Uncertainty": 0.3673,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 97.2198,
+                        "UpperQuantity": 20,
+                        "MinAmount": 53.9859,
+                        "Uncertainty": 0.3679,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 3.94,
+                "Beta": 0.35
+            },
+            {
+                "Name": null,
+                "Description": "Significant strength degredation (<0.8Vn), buckling or fracture of diagonal reinforcing, crushing of concrete.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Chip away damaged concrete, attached mechanical couplers to the diagonal bars still embeded in the wall, replace damaged or fractured reinforcing.  Replace damaged concrete.  ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 56119.5,
+                        "UpperQuantity": 20,
+                        "MinAmount": 31177.5,
+                        "Uncertainty": 0.3774,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 145.6575,
+                        "UpperQuantity": 20,
+                        "MinAmount": 81.1018,
+                        "Uncertainty": 0.3777,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 6.02,
+                "Beta": 1
+            }
+        ]
+    }
+}

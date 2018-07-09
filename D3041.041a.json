@@ -1,0 +1,67 @@
+{
+    "UniqueID": "8035e20d-0825-49c8-b093-8efaa807f523",
+    "ID": "D3041.041a",
+    "Description": "Costing per 10 units",
+    "BasicUnit": "Each",
+    "Name": "Variable Air Volume (VAV) box with in-line coil, SDC A or B",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Superior",
+        "Documentation": "Marginal",
+        "Rationality": "Marginal"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:31.2695683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "One failure is expected per 10 units.",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Coil damages connection to plumbing.  Leakage of hot water",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Replace coil and cleanup  water damage.",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 18000,
+                    "UpperQuantity": 10,
+                    "MinAmount": 12000,
+                    "Uncertainty": 0.2942,
+                    "CurveType": "LogNormal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 48.8235,
+                    "UpperQuantity": 10,
+                    "MinAmount": 31.1765,
+                    "Uncertainty": 0.2812,
+                    "CurveType": "LogNormal"
+                }
+            },
+            "Median": 1.9,
+            "Beta": 0.4
+        }
+    }
+}

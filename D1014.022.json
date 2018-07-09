@@ -1,0 +1,183 @@
+{
+    "UniqueID": "29583330-e467-488e-af6f-ba5d836caf94",
+    "ID": "D1014.022",
+    "Description": "Costing per elevator.  Elevator demand parameter shall be defined as the peak floor acceleration at the first floor.  The elevator fragility for a multiple story building should only be entered once on the first floor.",
+    "BasicUnit": "Each",
+    "Name": "Hydraulic Elevator \u2013 Applies to most California Installations prior to 1976, most western states installations prior to 1982 and most U.S installations prior to 1998.",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:11.7755683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Damaged controls.",
+            "DamageImageName": null,
+            "DamageStates": {
+                "DSGroupType": "Simultaneous",
+                "DamageState": [
+                    {
+                        "Name": null,
+                        "Description": "Damaged controls.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Repair damaged controls (100%)",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 868,
+                                "UpperQuantity": 1,
+                                "MinAmount": 868,
+                                "Uncertainty": 0.82,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 2.55,
+                                "UpperQuantity": 1,
+                                "MinAmount": 2.55,
+                                "Uncertainty": 0.82,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.3
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Damaged vane and hoist-way switches, and or bent cab stabilizers, and or damaged car guide shoes.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Repair damaged vane and hoist-way switches (41%), and or repair bent cab stabilizers (41%), and or repair damaged car guide shoes (41%). ",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 3180,
+                                "UpperQuantity": 1,
+                                "MinAmount": 3180,
+                                "Uncertainty": 0.32,
+                                "CurveType": "Normal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 9.36,
+                                "UpperQuantity": 1,
+                                "MinAmount": 9.36,
+                                "Uncertainty": 0.32,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.49
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Damaged entrance and car door, and or flooring damage.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Repair damage to cab door (68%), and or repair cab flooring (46%)",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 6060,
+                                "UpperQuantity": 1,
+                                "MinAmount": 6060,
+                                "Uncertainty": 0.44,
+                                "CurveType": "Normal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 17.8,
+                                "UpperQuantity": 1,
+                                "MinAmount": 17.8,
+                                "Uncertainty": 0.44,
+                                "CurveType": "Normal"
+                            }
+                        },
+                        "Percent": 0.44
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Oil leak in hydraulic line, and or hydraulic tank failure.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Repair oil leak in hydraulic line (27%), and or hydraulic tank failure (81%)",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 1880,
+                                "UpperQuantity": 1,
+                                "MinAmount": 1880,
+                                "Uncertainty": 0.23,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 5.53,
+                                "UpperQuantity": 1,
+                                "MinAmount": 5.53,
+                                "Uncertainty": 0.23,
+                                "CurveType": "Normal"
+                            }
+                        },
+                        "Percent": 0.37
+                    }
+                ]
+            },
+            "Median": 0.3,
+            "Beta": 0.3
+        }
+    }
+}

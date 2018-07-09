@@ -1,0 +1,67 @@
+{
+    "UniqueID": "a3c90d79-6fec-4abe-ab7c-ae9d885a9e82",
+    "ID": "B1033.071c",
+    "Description": "Costing on a per bay basis, equivalent to current AISC R=3.  Braces may be HSS, WF, or Angle.  Costing does not include fireproofing removal or reapplication cost.",
+    "BasicUnit": "Each",
+    "Name": "Braced frame, design for factored loads, no additional seismic detailing, Chevron Brace, Brace w > 100 PLF",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "Average",
+        "Documentation": "Average",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:41.4975683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "Performance data has 1 damage state where as the cost data has 3 damage states.  The performance data listed in DS1 appears to correspond to the cost data currently shown in DS3\u2026  Please confirm if two additional damage state performances should be added or if only one cost damage state should be included.",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Fracture of brace or gusset.  Buckling of gusset.  Substantial loss of lateral resistance.  ",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Brace and gusset are severely damaged with significant loss in stiffness and resistance, and both likely require replacement.  Yielding and local buckling of beams and columns may be repaired by heat straightening, stiffeners or reinforcement, if there is no cracking or tearing.  If cracking or tearing has initiated more substantial repair is needed.",
+                "TagState": "Red",
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0.2,
+                "RedTagBeta": 0.5,
+                "CostConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 43294.1943,
+                    "UpperQuantity": 7,
+                    "MinAmount": 28862.7962,
+                    "Uncertainty": 0.3278,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 115.4519,
+                    "UpperQuantity": 7,
+                    "MinAmount": 76.9681,
+                    "Uncertainty": 0.3278,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 0.0042,
+            "Beta": 0.25
+        }
+    }
+}

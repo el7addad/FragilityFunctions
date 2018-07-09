@@ -1,0 +1,141 @@
+{
+    "UniqueID": "9a8c1f89-ecf8-42c1-b65f-6e0d0c6cc43e",
+    "ID": "B1035.062b",
+    "Description": "Costing is on a per connection basis.  Costing does not include fireproofing removal or reapplication cost.",
+    "BasicUnit": "Each",
+    "Name": "EBF Shear Link, with floor beams, link w < 200 PLF",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Link Rotation Angle",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:42.7615683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Damage to concrete slab above the link beam.",
+                "DamageImageName": "B1035.061-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace concrete slab.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 128400,
+                        "UpperQuantity": 5,
+                        "MinAmount": 68480,
+                        "Uncertainty": 0.2961,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 352.4902,
+                        "UpperQuantity": 5,
+                        "MinAmount": 188.0039,
+                        "Uncertainty": 0.2958,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.04,
+                "Beta": 0.3
+            },
+            {
+                "Name": null,
+                "Description": "Web local buckling, flange local buckling.",
+                "DamageImageName": "B1035.061-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Heat straightening of buckled elements.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.5,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 137400,
+                        "UpperQuantity": 5,
+                        "MinAmount": 77860,
+                        "Uncertainty": 0.2695,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 376.7255,
+                        "UpperQuantity": 5,
+                        "MinAmount": 213.2824,
+                        "Uncertainty": 0.27,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.06,
+                "Beta": 0.3
+            },
+            {
+                "Name": null,
+                "Description": "Initiation of fracture in the link beam and link flange.",
+                "DamageImageName": "B1035.061-DS3-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace EBF link.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 174450,
+                        "UpperQuantity": 5,
+                        "MinAmount": 98855,
+                        "Uncertainty": 0.2113,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 478.6275,
+                        "UpperQuantity": 5,
+                        "MinAmount": 271.1118,
+                        "Uncertainty": 0.211,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.08,
+                "Beta": 0.3
+            }
+        ]
+    }
+}

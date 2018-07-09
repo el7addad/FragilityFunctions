@@ -1,0 +1,67 @@
+{
+    "UniqueID": "b727114e-f8d7-4204-9f13-684109f0cb65",
+    "ID": "D5011.013h",
+    "Description": "Costing is per unit and is based upon 500 kVa.",
+    "BasicUnit": "Each",
+    "Name": "Transformer/primary service - Capacity: 350 to <750 kVA - Equipment that is either hard anchored or is vibration isolated with seismic snubbers/restraints - Equipment fragility only",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:41.4865683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Damaged, inoperative but anchorage is OK.",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Service and repair existing transformer.",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 46970,
+                    "UpperQuantity": 4,
+                    "MinAmount": 38430,
+                    "Uncertainty": 0.1812,
+                    "CurveType": "LogNormal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 53.3961,
+                    "UpperQuantity": 4,
+                    "MinAmount": 26.6039,
+                    "Uncertainty": 0.1801,
+                    "CurveType": "LogNormal"
+                }
+            },
+            "Median": 3.05,
+            "Beta": 0.5
+        }
+    }
+}

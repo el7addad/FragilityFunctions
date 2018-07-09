@@ -1,0 +1,141 @@
+{
+    "UniqueID": "cf742b2d-e962-4eaf-a60f-8c27941dd4c4",
+    "ID": "C2011.001a",
+    "Description": "Flexible stair with seismic interstory slip joint.  Steel prefab stringers, steel or concrete filled pan treads.",
+    "BasicUnit": "Each",
+    "Name": "Prefabricated steel stair with steel treads and landings with seismic joints that accommodate drift.",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Marginal",
+        "Documentation": "Average",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:01.9555683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "User to provide median demand and dispersion values.  The values listed are default PACT values and do not represent the response of this component.\nImport errors:\n Warning, Data missing: C2011.001a:DS1: Could not parse median - using 500\nWarning, Data missing: C2011.001a:DS1: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.001a:DS2: Could not parse median - using 500\nWarning, Data missing: C2011.001a:DS2: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.001a:DS3: Could not parse median - using 500\nWarning, Data missing: C2011.001a:DS3: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.001a: DS2 Damage State has the same median as the previous damage state. - Replace damage states\nWarning, Data missing: C2011.001a: DS3 Damage State has the same median as the previous damage state. - Replace damage states\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Non structural damage, local steel yielding.",
+                "DamageImageName": "C2011.001a-DS1-1.jpg",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Patch, paint.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 520,
+                        "UpperQuantity": 5,
+                        "MinAmount": 320,
+                        "Uncertainty": 0.9899,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 1.4294,
+                        "UpperQuantity": 5,
+                        "MinAmount": 0.8804,
+                        "Uncertainty": 0.9897,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Structural damage but live load capacity remains intact.  Buckling of steel, weld cracking.",
+                "DamageImageName": "C2011.001a-DS2-1.jpg",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Removal and replacement of damaged components.  Field repair of damage (such as welding).",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 1690,
+                        "UpperQuantity": 5,
+                        "MinAmount": 1040,
+                        "Uncertainty": 0.5448,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 4.6406,
+                        "UpperQuantity": 5,
+                        "MinAmount": 2.8563,
+                        "Uncertainty": 0.5451,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Loss of live load capacity.  Connection and or weld fracture.",
+                "DamageImageName": "C2011.001a-DS2-1.jpg",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace stair.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.1,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 25935,
+                        "UpperQuantity": 5,
+                        "MinAmount": 15960,
+                        "Uncertainty": 0.3957,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 71.1894,
+                        "UpperQuantity": 5,
+                        "MinAmount": 43.8071,
+                        "Uncertainty": 0.3956,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            }
+        ]
+    }
+}

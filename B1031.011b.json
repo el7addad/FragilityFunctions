@@ -1,0 +1,141 @@
+{
+    "UniqueID": "0c007a68-375c-4fb2-aa4e-55b092e936b2",
+    "ID": "B1031.011b",
+    "Description": "Costing is on a per connection basis.  Costing does not include fireproofing removal or reapplication cost.",
+    "BasicUnit": "Each",
+    "Name": "Steel Column Base Plates, Column 150 plf < W < 300 plf",
+    "Author": "Greg Deierlein",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:39.0915683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Initiation of crack at the fusion line between the column flange and the base plate weld.",
+                "DamageImageName": "B1031.011a-schematic.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "The repair will involve removal of a portion of grade slab, gouging out material surrounding the fracture initiating and re-welding, then repair of slab. ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 24372,
+                        "UpperQuantity": 15,
+                        "MinAmount": 16248,
+                        "Uncertainty": 0.3916,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 66.9006,
+                        "UpperQuantity": 15,
+                        "MinAmount": 44.5994,
+                        "Uncertainty": 0.3915,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.04,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Propagation of brittle crack into column and/or base plate. ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Depending on the crack trajectory, the repair will range from replacement of a portion of the column or base plate to full replacement of the column base. Replacement will require shoring of column, torch cutting to remove damaged material, and fabrication",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 33864,
+                        "UpperQuantity": 15,
+                        "MinAmount": 22576,
+                        "Uncertainty": 0.3418,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 92.9633,
+                        "UpperQuantity": 15,
+                        "MinAmount": 61.9767,
+                        "Uncertainty": 0.3418,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.07,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Complete fracture of the column (or column weld) and dislocation of column relative to the base.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Repair would likely involve replacing the entire base plate assembly and most of the column in the story above the base plate. ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.1,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 41544,
+                        "UpperQuantity": 15,
+                        "MinAmount": 27696,
+                        "Uncertainty": 0.3058,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 114.0471,
+                        "UpperQuantity": 15,
+                        "MinAmount": 76.0329,
+                        "Uncertainty": 0.3058,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.1,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

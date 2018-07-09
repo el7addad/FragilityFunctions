@@ -1,0 +1,105 @@
+{
+    "UniqueID": "cc337496-0e07-4124-be8a-c2b4cfbb0844",
+    "ID": "B3011.011",
+    "Description": "Costing per roofing square (100 SF)",
+    "BasicUnit": "Each",
+    "Name": "Concrete tile roof, tiles secured and compliant with UBC94",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:59.8295683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Minor damage; tiles dislodged.",
+                "DamageImageName": "B3011.011-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Reinstall dislodged tiles.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 1050,
+                        "UpperQuantity": 20,
+                        "MinAmount": 560,
+                        "Uncertainty": 0.5762,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 3.0294,
+                        "UpperQuantity": 20,
+                        "MinAmount": 1.5882,
+                        "Uncertainty": 0.6745,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 1.1,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Major portion of tile dislodged.",
+                "DamageImageName": "B3011.011-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Reinstall dislodged tiles. ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.5,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 2220,
+                        "UpperQuantity": 20,
+                        "MinAmount": 1184,
+                        "Uncertainty": 0.3074,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 6.1765,
+                        "UpperQuantity": 20,
+                        "MinAmount": 3.1294,
+                        "Uncertainty": 0.3613,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 1.4,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

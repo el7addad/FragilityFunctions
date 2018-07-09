@@ -1,0 +1,67 @@
+{
+    "UniqueID": "f3732f03-da69-4924-adf6-d6ec542d0052",
+    "ID": "D2051.014b",
+    "Description": "Costing based upon 1000 ft segments of pipe, pipe 2.5 inches in diameter or less",
+    "BasicUnit": "Each",
+    "Name": "Chilled Water Piping - Small Diameter Threaded Steel - (2.5 inches in diameter or less), SDC D, E, or F (OSHPD or sim), BRACING FRAGILITY",
+    "Author": null,
+    "Correlation": 1,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:49:13.3725683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "Yes\nImport errors:\n Warning: D2051.014b: Could not parse Correlation - Assuming Correlated\nWarning: D2051.014b: Could not parse Demand Location - Using False\nWarning, Data missing: D2051.014b:DS1: Could not parse dispersion - using 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Isolated support failure w/o leakage - 0.5 supports fail per 1000 feet of pipe (assuming supports every 20 feet)",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "NO",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 250,
+                    "MaxAmount": 760,
+                    "UpperQuantity": 500,
+                    "MinAmount": 228,
+                    "Uncertainty": 0.603,
+                    "CurveType": "LogNormal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 250,
+                    "MaxAmount": 2.0729,
+                    "UpperQuantity": 500,
+                    "MinAmount": 0.5708,
+                    "Uncertainty": 0.3367,
+                    "CurveType": "LogNormal"
+                }
+            },
+            "Median": 3,
+            "Beta": 0.5
+        }
+    }
+}

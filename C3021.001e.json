@@ -1,0 +1,105 @@
+{
+    "UniqueID": "be038431-bb07-4690-8d11-dbd31aa9540a",
+    "ID": "C3021.001e",
+    "Description": "Flooring type to be specified by the user.  Fragility is based upon fire sprinkler drops in a light weight suspended ceiling, SDC A.  User to revise fragility data as deemed appropriate.",
+    "BasicUnit": "Each",
+    "Name": "Generic Floor Covering - Flooding of floor caused by failure of pipe - Hospital - Dry",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Marginal",
+        "Documentation": "Marginal",
+        "Rationality": "Marginal"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:05.6625683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "None\nImport errors:\n Warning, Data missing: C3021.001e:DS2:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C3021.001e:DS2:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C3021.001e:DS2:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C3021.001e:DS2:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: C3021.001e:DS2:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C3021.001e:DS2:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C3021.001e:DS2:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C3021.001e:DS2:Cost: Could not parse Dispersion - Assuming 0.5\n",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Spraying & Dripping Leakage at drop joints -  0.01 leaks per drop,  Flooring Damage Descrption by User.  User to include mutually exclusive damage states with different probabilities for varying percentages of the total floor area.  ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace or dry out of the affected flooring materials, equipment and contents.  Remove areas that could be affected by mold.  Potentially considerable downtime.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1000,
+                        "MaxAmount": 46.32,
+                        "UpperQuantity": 5000,
+                        "MinAmount": 30.88,
+                        "Uncertainty": 0.2604,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1000,
+                        "MaxAmount": 0.1672,
+                        "UpperQuantity": 5000,
+                        "MinAmount": 0.1128,
+                        "Uncertainty": 0.2341,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.75,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Drop Joints Break - Major Leakage - 0.01 breaks  per drop, Flooring Damage Descrption by User.  User to include mutually exclusive damage states with different probabilities for varying percentages of the total floor area.  ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace or dry out of the affected flooring materials, equipment and contents.  Remove areas that could be affected by mold.  Potentially considerable downtime.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 1,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.5,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 1,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.5,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.95,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

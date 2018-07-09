@@ -1,0 +1,105 @@
+{
+    "UniqueID": "9710c9b3-604c-4196-b6c7-b81fb2bfb8df",
+    "ID": "B2011.021a",
+    "Description": "Costing for each 100 ft^2 Wall Panel.   Assumed framing:  33 mil cold formed steel framing with 22 or 31 mil steel sheathing attached with No. 8 screws spaced 2\" or 6\" OC at perimeter and 12\" OC EW in the field.",
+    "BasicUnit": "Each",
+    "Name": "Exterior Wall - Cold formed steel walls with 22 or 31 mil steel sheathing, interior - gypsum board",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:53.3885683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "Copy of B1061.021a for use as an exterior wall.",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Pull out of sheathing fasteners from studs.",
+                "DamageImageName": "B1061.021-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove damaged wall, ceilings, wall finishes, mechanical, electrical, and office furnature / equipment.  Temporarly protect floor and provide dust curtains.  Modify mechanical and electrical as required for repair work.  Replace 20% of fasteners, replace gypsum wall board, tape, sand, paint.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.2,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 2491.67,
+                        "UpperQuantity": 30,
+                        "MinAmount": 1340,
+                        "Uncertainty": 0.27,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 6.51,
+                        "UpperQuantity": 30,
+                        "MinAmount": 3.49,
+                        "Uncertainty": 0.293,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 1.9,
+                "Beta": 0.25
+            },
+            {
+                "Name": null,
+                "Description": "Buckling of steel sheathing.  Buckling of framing members.",
+                "DamageImageName": "B1061.021-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove damaged wall, ceilings, wall finishes, mechanical, electrical, and office furnature / equipment.  Temporarly protect floor and provide dust curtains.  Modify mechanical and electrical as required for repair work.  Install new sheathing, new metal stud framing as needed, replace gypsum wall board, tape, sand, paint.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.1,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 4340,
+                        "UpperQuantity": 30,
+                        "MinAmount": 2710,
+                        "Uncertainty": 0.202,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 11.9,
+                        "UpperQuantity": 30,
+                        "MinAmount": 7.62,
+                        "Uncertainty": 0.192,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.53,
+                "Beta": 0.25
+            }
+        ]
+    }
+}

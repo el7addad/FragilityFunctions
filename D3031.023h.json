@@ -1,0 +1,67 @@
+{
+    "UniqueID": "32d3653c-0386-4c35-9ff9-d2a4c5d8cea8",
+    "ID": "D3031.023h",
+    "Description": "Costing is per unit and is based upon 500 Ton.",
+    "BasicUnit": "Each",
+    "Name": "Cooling Tower - Capacity: 350 to <750 Ton - Equipment that is either hard anchored or is vibration isolated with seismic snubbers/restraints - Equipment fragility only",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:20.6495683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Damaged equipment and attached piping but anchorage is OK.",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Repair damaged equipment and attached piping.",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": true,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 143220,
+                    "UpperQuantity": 4,
+                    "MinAmount": 117180,
+                    "Uncertainty": 0.1764,
+                    "CurveType": "LogNormal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 134.7941,
+                    "UpperQuantity": 4,
+                    "MinAmount": 110.2859,
+                    "Uncertainty": 0.1764,
+                    "CurveType": "LogNormal"
+                }
+            },
+            "Median": 1.52,
+            "Beta": 0.4
+        }
+    }
+}

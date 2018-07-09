@@ -1,0 +1,72 @@
+{
+    "UniqueID": "6da0b46b-15ca-4b44-b695-66fa5a0c074c",
+    "ID": "C3033.002",
+    "Description": "2ft by 4ft lighting fixture recessed in a suspended ceiling.  Fragility is for casualty evaluation only.  Ceiling lighting cost consequence has been included in the suspended ceiling fragilities.",
+    "BasicUnit": "Each",
+    "Name": "Recessed lighting in suspended ceiling - with independent support wires",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:10.6935683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "  This component requires user specified cost and time consequence data.  Values within PACT are defaults (equal to zero) and do not represent actual consequence.\nImport errors:\n Warning, Data missing: C3033.002:DS1:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C3033.002:DS1:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C3033.002:DS1:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C3033.002:DS1:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: C3033.002:DS1:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C3033.002:DS1:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C3033.002:DS1:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C3033.002:DS1:Cost: Could not parse Dispersion - Assuming 0.5\n",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Not Applicable.",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Not applicable.",
+                "TagState": 0,
+                "UseCasualty": true,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": {
+                    "Area": {
+                        "Unit": "Square Foot",
+                        "Value": 10
+                    }
+                },
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0.75,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0.5,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 1.5,
+            "Beta": 0.4
+        }
+    }
+}

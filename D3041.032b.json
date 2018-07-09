@@ -1,0 +1,72 @@
+{
+    "UniqueID": "97c78928-08e1-49ff-9ccd-4e272b561e9a",
+    "ID": "D3041.032b",
+    "Description": "Costing per 10 units, unit supported by ducting only, no independent safety wires",
+    "BasicUnit": "Each",
+    "Name": "HVAC Drops / Diffusers without ceilings - supported by ducting only - No independent safety wires, SDC C",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Superior",
+        "Documentation": "Marginal",
+        "Rationality": "Marginal"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:30.7455683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "One failure is expected per 10 units.",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "HVAC Drops or Diffusers Dislodges and Falls",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Replace diffuser/drop and sections of ceiling and ducting in vicinity to which diffuser/drop is connected.",
+                "TagState": 0,
+                "UseCasualty": true,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": {
+                    "Area": {
+                        "Unit": "Square Foot",
+                        "Value": 4
+                    }
+                },
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0.1,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0.5,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 10,
+                    "MaxAmount": 3600,
+                    "UpperQuantity": 50,
+                    "MinAmount": 2400,
+                    "Uncertainty": 0.2066,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 10,
+                    "MaxAmount": 11.6471,
+                    "UpperQuantity": 50,
+                    "MinAmount": 8.3529,
+                    "Uncertainty": 0.001,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 1.5,
+            "Beta": 0.4
+        }
+    }
+}

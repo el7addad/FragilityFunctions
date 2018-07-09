@@ -1,0 +1,141 @@
+{
+    "UniqueID": "d8cdb661-5f85-425e-b93f-e202ca802ecd",
+    "ID": "C2011.031a",
+    "Description": "Stair consists of steel stringers with precast treads rigidly linked to stringer",
+    "BasicUnit": "Each",
+    "Name": "Hybrid stair assembly with steel stringers and concrete treads and landings with seismic joints that accommodate drift.",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Marginal",
+        "Documentation": "Average",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:03.0085683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "User to provide median demand and dispersion values.  The values listed are default PACT values and do not represent the response of this component.\nImport errors:\n Warning, Data missing: C2011.031a:DS1: Could not parse median - using 500\nWarning, Data missing: C2011.031a:DS1: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.031a:DS2: Could not parse median - using 500\nWarning, Data missing: C2011.031a:DS2: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.031a:DS2:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C2011.031a:DS2:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS2:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS2:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: C2011.031a:DS2:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C2011.031a:DS2:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS2:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS2:Cost: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: C2011.031a:DS3: Could not parse median - using 500\nWarning, Data missing: C2011.031a:DS3: Could not parse dispersion - using 0.5\nWarning, Data missing: C2011.031a:DS3:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C2011.031a:DS3:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS3:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS3:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: C2011.031a:DS3:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: C2011.031a:DS3:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS3:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: C2011.031a:DS3:Cost: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: C2011.031a: DS2 Damage State has the same median as the previous damage state. - Replace damage states\nWarning, Data missing: C2011.031a: DS3 Damage State has the same median as the previous damage state. - Replace damage states\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Localized steel yielding.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "TBD",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 520,
+                        "UpperQuantity": 5,
+                        "MinAmount": 320,
+                        "Uncertainty": 0.9899,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 1.4294,
+                        "UpperQuantity": 5,
+                        "MinAmount": 0.8804,
+                        "Uncertainty": 0.9897,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Buckling of steel, weld cracking.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "TBD",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 1,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.5,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 1,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.5,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            },
+            {
+                "Name": null,
+                "Description": "Loss of live load capacity.  ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "TBD",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.1,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 1,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.5,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 1,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.5,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 500,
+                "Beta": 0.5
+            }
+        ]
+    }
+}

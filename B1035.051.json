@@ -1,0 +1,233 @@
+{
+    "UniqueID": "55badc64-f473-4a64-9bd9-f94e659430bb",
+    "ID": "B1035.051",
+    "Description": "Costing is on a per bay basis.  Costing does not include fireproofing removal or reapplication cost.",
+    "BasicUnit": "Each",
+    "Name": "Pre-Northridge WUF-B beam-column joint, beam both sides of column, beam depth <= W27",
+    "Author": "Greg Deierlein",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:42.5525683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Fracture of lower beam flange weld and failure of web bolts (shear tab connection), with fractures confined to the weld region. ",
+                "DamageImageName": "B1035.041-DS1-1.JPG",
+                "DamageStates": {
+                    "DSGroupType": "MutuallyExclusive",
+                    "DamageState": [
+                        {
+                            "Name": null,
+                            "Description": "Fracture of lower beam flange weld and failure of web bolts (shear tab connection), with fractures confined to the weld region. ",
+                            "DamageImageName": "B1035.041-DS1-1.JPG",
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Repair will typically require gouging out and re-welding of the beam flange weld, repair of shear tab, and replacing shear bolts.",
+                                "TagState": "Red",
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0.5,
+                                "RedTagBeta": 0.5,
+                                "CostConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 21096,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 14064,
+                                    "Uncertainty": 0.3584,
+                                    "CurveType": "Normal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 57.9118,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 38.6082,
+                                    "Uncertainty": 0.3585,
+                                    "CurveType": "Normal"
+                                }
+                            },
+                            "Percent": 0.75
+                        },
+                        {
+                            "Name": null,
+                            "Description": "Similar to DS1, except that fracture propagates into column flanges.",
+                            "DamageImageName": "B1035.041-DS2-1.JPG",
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "DESCRIPTION IS NOT COMPLETE:  In addition to column measures for DS1, repairs to column will be necessary that will involve replacing a portion of the \u2026.",
+                                "TagState": "Red",
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0.5,
+                                "RedTagBeta": 0.5,
+                                "CostConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 22896,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 15264,
+                                    "Uncertainty": 0.3578,
+                                    "CurveType": "Normal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 62.8553,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 41.9047,
+                                    "Uncertainty": 0.3578,
+                                    "CurveType": "Normal"
+                                }
+                            },
+                            "Percent": 0.25
+                        }
+                    ]
+                },
+                "Median": 0.017,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Fracture of upper beam flange weld, without DS1 type damage.  Fracture is confined to beam flange region. ",
+                "DamageImageName": null,
+                "DamageStates": {
+                    "DSGroupType": "MutuallyExclusive",
+                    "DamageState": [
+                        {
+                            "Name": null,
+                            "Description": "Fracture of upper beam flange weld, without DS1 type damage.  Fracture is confined to beam flange region. ",
+                            "DamageImageName": null,
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Repairs will be similar to those required for DS1, except that access to weld will likely require removal of a portion of the floor slab above the weld.",
+                                "TagState": "Red",
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0.5,
+                                "RedTagBeta": 0.5,
+                                "CostConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 29496,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 19664,
+                                    "Uncertainty": 0.3041,
+                                    "CurveType": "Normal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 80.9649,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 53.9751,
+                                    "Uncertainty": 0.3041,
+                                    "CurveType": "Normal"
+                                }
+                            },
+                            "Percent": 0.75
+                        },
+                        {
+                            "Name": null,
+                            "Description": "Similar to DS3, except that fracture propagates into column flanges.",
+                            "DamageImageName": null,
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "In addition to column measures for DS3, repairs to column will be necessary that will involve replacing a portion of the column flange.",
+                                "TagState": "Red",
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0.5,
+                                "RedTagBeta": 0.5,
+                                "CostConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 28944,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 19296,
+                                    "Uncertainty": 0.318,
+                                    "CurveType": "Normal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 10,
+                                    "MaxAmount": 79.4524,
+                                    "UpperQuantity": 30,
+                                    "MinAmount": 52.9676,
+                                    "Uncertainty": 0.318,
+                                    "CurveType": "Normal"
+                                }
+                            },
+                            "Percent": 0.25
+                        }
+                    ]
+                },
+                "Median": 0.025,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Fracture initiating at weld access hole and propagating through beam flange, possibly accompanied by local buckling deformations of web and flange. ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Repair is similar to that for DS1 except that a portion of the beam web and flange may need to be heat straightened or replaced.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.5,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 10,
+                        "MaxAmount": 22656,
+                        "UpperQuantity": 30,
+                        "MinAmount": 15104,
+                        "Uncertainty": 0.3264,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 10,
+                        "MaxAmount": 62.2,
+                        "UpperQuantity": 30,
+                        "MinAmount": 41.5,
+                        "Uncertainty": 0.326,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.03,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

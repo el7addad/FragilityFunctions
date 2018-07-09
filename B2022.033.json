@@ -1,0 +1,110 @@
+{
+    "UniqueID": "32fbd2ca-7dc9-4680-9616-948d62944c03",
+    "ID": "B2022.033",
+    "Description": "None",
+    "BasicUnit": "Each",
+    "Name": "Midrise stick-built curtain wall, Config: Monolithic, Lamination: Not laminated, Glass Type: Annealed, Details: 1/4 in. (6 mm) AN monolithic; glass-frame clearance = 0.13 in. (3 mm); aspect ratio = 6:5 sealant = dry",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:54.7135683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None\nImport errors:\n Warning: B2022.033: B2022.033: DS1 overlaps DS2 in the range of 0.0021 to 0.0042 - Make sure damage states are minimally overlapping\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Glass cracking.",
+                "DamageImageName": "B2022.001a-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace cracked glass panel.  ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 2055,
+                        "UpperQuantity": 100,
+                        "MinAmount": 1096,
+                        "Uncertainty": 0.1668,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 5.3729,
+                        "UpperQuantity": 100,
+                        "MinAmount": 2.8908,
+                        "Uncertainty": 0.1521,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0084,
+                "Beta": 0.25
+            },
+            {
+                "Name": null,
+                "Description": "Glass falls from frame.",
+                "DamageImageName": "B2022.001a-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace cracked glass panel; cover exposure in meantime.",
+                    "TagState": "Red",
+                    "UseCasualty": true,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": {
+                        "Area": {
+                            "Unit": "Square Foot",
+                            "Value": 36
+                        }
+                    },
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0.25,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0.5,
+                    "RedTagMedian": 0.5,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 2055,
+                        "UpperQuantity": 100,
+                        "MinAmount": 1096,
+                        "Uncertainty": 0.1668,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 20,
+                        "MaxAmount": 5.3729,
+                        "UpperQuantity": 100,
+                        "MinAmount": 2.8908,
+                        "Uncertainty": 0.1521,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0107,
+                "Beta": 0.35
+            }
+        ]
+    }
+}

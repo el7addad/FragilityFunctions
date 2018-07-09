@@ -1,0 +1,105 @@
+{
+    "UniqueID": "ba73d817-fa12-4845-a439-151afa7ad790",
+    "ID": "C3011.002c",
+    "Description": "Costing based upon 9'x100' Panels",
+    "BasicUnit": "Each",
+    "Name": "Wall Partition, Type: Gypsum + Ceramic Tile, Full Height, Fixed Below, Slip Track Above w/ returns (friction connection)",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:04.1935683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None\nImport errors:\n Warning: C3011.002c: C3011.002c: DS1 overlaps DS2 at 0.02 - Make sure damage states are minimally overlapping\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Minor cracked joints and tile.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Carefully remove cracked tile and grout at cracked joints, install new ceramic tile and re-grout joints for 10% of  full 100 foot length of wall.  Existing wall board will remain in place.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 0.1111,
+                        "MaxAmount": 9360,
+                        "UpperQuantity": 1.1111,
+                        "MinAmount": 5760,
+                        "Uncertainty": 0.2208,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 0.1111,
+                        "MaxAmount": 24.3529,
+                        "UpperQuantity": 1.1111,
+                        "MinAmount": 13.7647,
+                        "Uncertainty": 0.1803,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.002,
+                "Beta": 0.7
+            },
+            {
+                "Name": null,
+                "Description": "Cracked joints and tile.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Install ceramic tile and grout all joints for full 100 foot length of wall.  Note: gypsum wall board will also be removed and replaced which means the removal of ceramic tile will be part of the gypsum wall board removal. ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 0.1111,
+                        "MaxAmount": 37908,
+                        "UpperQuantity": 1.1111,
+                        "MinAmount": 23328,
+                        "Uncertainty": 0.0948,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 0.1111,
+                        "MaxAmount": 115.7294,
+                        "UpperQuantity": 1.1111,
+                        "MinAmount": 72.8471,
+                        "Uncertainty": 0.078,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.005,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

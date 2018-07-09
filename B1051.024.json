@@ -1,0 +1,141 @@
+{
+    "UniqueID": "c172c644-ee41-407a-afa5-e0f31566e21c",
+    "ID": "B1051.024",
+    "Description": "Costing for each 225 ft^2 Wall Panel",
+    "BasicUnit": "Each",
+    "Name": "Ordinary reinforced masonry walls with partially grouted cells, 16\" thick, flexure dominated greater than 12' tall",
+    "Author": "Benson Shing",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "Marginal",
+        "Documentation": "Average",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:51.7535683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "A few flexural and shear cracks with hardly noticeable residual crack widths.  Slight yielding of extreme vertical reinforcement.  No spalling.  No fracture or buckling of vertical reinforcement.  No structurally significant damage. ",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Cosmetic repair.  Patch cracks and paint each side. ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 6,
+                        "MaxAmount": 1620,
+                        "UpperQuantity": 20,
+                        "MinAmount": 1080,
+                        "Uncertainty": 0.3584,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 6,
+                        "MaxAmount": 5.2306,
+                        "UpperQuantity": 20,
+                        "MinAmount": 3.7694,
+                        "Uncertainty": 0.3902,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0018,
+                "Beta": 0.73
+            },
+            {
+                "Name": null,
+                "Description": "Numerous flexural and diagonal cracks with residual crack widths less than 1/64 in.  Mild toe crushing with vertical cracks or light spalling at wall toes.  No fracture or buckling of reinforcement.  Small residual deformation. ",
+                "DamageImageName": "B1051.003-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove loose masonry.  Patch spalls with non-shrink grout.  Grout wall.  Epoxy injection.  Paint each side.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 6,
+                        "MaxAmount": 10350,
+                        "UpperQuantity": 20,
+                        "MinAmount": 6900,
+                        "Uncertainty": 0.0768,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 6,
+                        "MaxAmount": 27.1676,
+                        "UpperQuantity": 20,
+                        "MinAmount": 17.8324,
+                        "Uncertainty": 0.078,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0051,
+                "Beta": 0.65
+            },
+            {
+                "Name": null,
+                "Description": "Severe flexural cracks with residual crack widths greater than 1/32 in.  Severe toe crushing and spalling.  Fracture or buckling of vertical reinforcement.  Significant residual deformation.",
+                "DamageImageName": "B1051.003-DS3-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "  Shore. - Demolish existing wall. - Construct new wall.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 6,
+                        "MaxAmount": 20910,
+                        "UpperQuantity": 20,
+                        "MinAmount": 13940,
+                        "Uncertainty": 0.1135,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 6,
+                        "MaxAmount": 56.68,
+                        "UpperQuantity": 20,
+                        "MinAmount": 37.82,
+                        "Uncertainty": 0.119,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0086,
+                "Beta": 0.56
+            }
+        ]
+    }
+}

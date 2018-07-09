@@ -1,0 +1,141 @@
+{
+    "UniqueID": "ee02669e-a54c-4cd4-a855-8aeb085ca630",
+    "ID": "B1031.021c",
+    "Description": "Costing is on a per connection basis.  Costing does not include fireproofing removal or reapplication cost.",
+    "BasicUnit": "Each",
+    "Name": "Welded column splices, Column W > 300 plf",
+    "Author": "Greg Deierlein",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:39.1635683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Cracking of the groove welded flange splice. ",
+                "DamageImageName": "B1031.021a-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Repair would involve gouging out the material adjacent to the fracture and repairing with a new groove weld. ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 13608,
+                        "UpperQuantity": 15,
+                        "MinAmount": 9072,
+                        "Uncertainty": 0.268,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 40.0206,
+                        "UpperQuantity": 15,
+                        "MinAmount": 26.6794,
+                        "Uncertainty": 0.268,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.04,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "DS1 followed by complete failure of the web splice plate and dislocation of the two column segments on either side of the splice.",
+                "DamageImageName": "B1031.021a-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": " Repair may not be practically feasible, but would require either realignment or replacement of adjacent column segments and rewelding of splice. ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.02,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 19608,
+                        "UpperQuantity": 15,
+                        "MinAmount": 13072,
+                        "Uncertainty": 0.2361,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 57.6718,
+                        "UpperQuantity": 15,
+                        "MinAmount": 38.4482,
+                        "Uncertainty": 0.2361,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.07,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Complete fracture of the column (or column weld) and dislocation of column relative to the column below plate.  (More severe case of type DS2)",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Repair may not be feasible depending on the extent of dislocation, which is likely to be accompanied by large residual story drift. If feasible, repair would likely involve replacing the entire base plate assembly and most of the column in the story above.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.01,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 56532,
+                        "UpperQuantity": 15,
+                        "MinAmount": 37688,
+                        "Uncertainty": 0.1411,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 166.2718,
+                        "UpperQuantity": 15,
+                        "MinAmount": 110.8482,
+                        "Uncertainty": 0.1411,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.1,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

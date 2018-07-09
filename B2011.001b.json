@@ -1,0 +1,141 @@
+{
+    "UniqueID": "9a70a6e1-578e-46a0-848c-83b86e7be27d",
+    "ID": "B2011.001b",
+    "Description": "Costing for each 100 ft^2 Wall Panel.   Assumed framing:  38 mil cold formed steel framing with 7/16 OSB and 3/8 plywood panel sheathing with overturning restraint at each end of the wall per AISI design standard.  No. 8 screws 2\" to 6\" OC at perimeter and 12\" OC EW in field.  ",
+    "BasicUnit": "Each",
+    "Name": "Exterior Wall - Cold formed steel walls with wood structural panel sheathing, exterior - stucco one side",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:53.1965683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "Copy of B1061.001b for use as an exterior wall.\nImport errors:\n Warning: B2011.001b: B2011.001b: DS2 overlaps DS3 in the range of 9.04 to 10.68 - Make sure damage states are minimally overlapping\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Sheathing faster pull through or tear out.  (20% of fasteners.)",
+                "DamageImageName": "B1061.001-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove damaged wall, ceilings, mechanical, electrical, and office furnature / equipment.  Temporarly protect floor and provide dust curtains.  Modify mechanical and electrical as required for repair work.  Replace 20% of fasteners, replace gypsum wall board, stucco, tape and sand, repaint.  ",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 4051.6667,
+                        "UpperQuantity": 30,
+                        "MinAmount": 2181.6667,
+                        "Uncertainty": 0.2474,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 10.4567,
+                        "UpperQuantity": 30,
+                        "MinAmount": 5.5433,
+                        "Uncertainty": 0.3192,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.4,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Failure of structural panels.  ",
+                "DamageImageName": "B1061.001-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove damaged wall, ceilings, mechanical, electrical, and office furnature / equipment.  Temporarly protect floor and provide dust curtains.  Modify mechanical and electrical as required for repair work.  Replace sheathing, replace gypsum wall board, stucco, tape and sand, repaint.  ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 4530,
+                        "UpperQuantity": 30,
+                        "MinAmount": 2831.25,
+                        "Uncertainty": 0.2689,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 11.9837,
+                        "UpperQuantity": 30,
+                        "MinAmount": 7.5203,
+                        "Uncertainty": 0.2707,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.26,
+                "Beta": 0.3
+            },
+            {
+                "Name": null,
+                "Description": "Failure of wall.",
+                "DamageImageName": "B1061.001-DS3-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove damaged wall, ceilings, mechanical, electrical, and office furnature / equipment.  Temporarly protect floor and provide dust curtains.  Provide shoring.  Modify mechanical and electrical as required for repair work.  Replace metal stud framing, boundary elements, sheathing, replace gypsum wall board, stucco, tape and sand, repaint.  ",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.1,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 30,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.0935,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 2,
+                        "MaxAmount": 0,
+                        "UpperQuantity": 30,
+                        "MinAmount": 0,
+                        "Uncertainty": 0.1003,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 2.67,
+                "Beta": 0.25
+            }
+        ]
+    }
+}

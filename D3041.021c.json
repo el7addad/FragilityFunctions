@@ -1,0 +1,110 @@
+{
+    "UniqueID": "45d5528e-e78d-433e-8819-5366cf533b16",
+    "ID": "D3041.021c",
+    "Description": "Costing based upon 1000 ft segments of duct",
+    "BasicUnit": "Each",
+    "Name": "HVAC Stainless Steel Ducting less than 6 sq. ft in cross sectional area, SDC D, E, or F",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Superior",
+        "Documentation": "Marginal",
+        "Rationality": "Marginal"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:29.2405683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Individual supports fail and duct sags - 1 failed support per 1000 feet of ducting",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace failed supports and repair ducting in vicinity of failed supports.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 2500,
+                        "UpperQuantity": 500,
+                        "MinAmount": 750,
+                        "Uncertainty": 0.1964,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 6.0882,
+                        "UpperQuantity": 500,
+                        "MinAmount": 1.7647,
+                        "Uncertainty": 0.1233,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 1.5,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Several adjacent supports fail and sections of ducting fall - 60 feet of ducting fail and fall per 1000 foot of ducting",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Replace sections of failed ducting and supports.",
+                    "TagState": 0,
+                    "UseCasualty": true,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": {
+                        "Area": {
+                            "Unit": "Square Foot",
+                            "Value": 15
+                        }
+                    },
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0.05,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0.5,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 31900,
+                        "UpperQuantity": 500,
+                        "MinAmount": 9570,
+                        "Uncertainty": 0.1847,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 250,
+                        "MaxAmount": 78.4059,
+                        "UpperQuantity": 500,
+                        "MinAmount": 23.2376,
+                        "Uncertainty": 0.1771,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.25,
+                "Beta": 0.4
+            }
+        ]
+    }
+}

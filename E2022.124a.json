@@ -1,0 +1,72 @@
+{
+    "UniqueID": "9e927298-bab7-43d6-bfc3-3b762874a22e",
+    "ID": "E2022.124a",
+    "Description": "Filing cabinet, unanchored laterally.  Cabinet has 4 drawers and is 18.6\" deep x 52.5\" tall",
+    "BasicUnit": "Each",
+    "Name": "Lateral Filing Cabinet, 2 drawer, unanchored laterally",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Peak Floor Velocity",
+        "DefaultUnits": "Inch Per Second",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:49:01.9295683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "Peak floor velocity limit is calculated as a function of the aspect ratio of the filing cabinet and the building period, T.  At the ground floor the fragility will be based upon the ground motion only.  This component requires user specified cost and time consequence data.  Values within PACT are defaults (equal to zero) and do not represent actual consequence.\nImport errors:\n Warning, Data missing: E2022.124a:DS1: Could not parse Casualty Injury Rate Median - Using 0\nWarning, Data missing: E2022.124a:DS1:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: E2022.124a:DS1:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: E2022.124a:DS1:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: E2022.124a:DS1:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: E2022.124a:DS1:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: E2022.124a:DS1:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: E2022.124a:DS1:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: E2022.124a:DS1:Cost: Could not parse Dispersion - Assuming 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Filing cabinet falls over and contents are scattered.  Likely damage to file cabinet.  ",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Replace filing cabinet and refile / replace contents.  ",
+                "TagState": 0,
+                "UseCasualty": true,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": {
+                    "Area": {
+                        "Unit": "Square Foot",
+                        "Value": 10
+                    }
+                },
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0.5,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 27.1,
+            "Beta": 0.5
+        }
+    }
+}

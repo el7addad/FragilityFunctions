@@ -1,0 +1,67 @@
+{
+    "UniqueID": "232c234f-f992-4916-867a-7ea2d48c4ba3",
+    "ID": "B1033.111b",
+    "Description": "None",
+    "BasicUnit": "Each",
+    "Name": "Steel Buckling Restrained Brace (BRB), Single Diagonal brace, Weight of brace > 41 plf and < 99 plf.",
+    "Author": "John Wallace",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:42.0245683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Fracture of brace or gusset.  Buckling of gusset.  Severe yielding of beams and columns adjacent to the gusset with possibility of local buckling and cracking in the yielded areas.  Severe loss of lateral resistance.",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Brace and gusset are severely damaged with significant loss in stiffness and resistance, and both likely require replacement. Yielding and local buckling of beams and columns may be repaired by heat straightening, stiffeners or reinforcement, if there is no cracking or tearing. If cracking or tearing has initiated more substantial repair is needed.",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 58395.7011,
+                    "UpperQuantity": 7,
+                    "MinAmount": 39709.0768,
+                    "Uncertainty": 0.2986,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 3,
+                    "MaxAmount": 160.0604,
+                    "UpperQuantity": 7,
+                    "MinAmount": 108.7638,
+                    "Uncertainty": 0.2994,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 0.02,
+            "Beta": 0.4
+        }
+    }
+}

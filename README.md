@@ -1,2 +1,2 @@
-# FragilityFunctions
-ATC Fragility Function in JSON format
+# Fragility Functions
+This repository contains the ATC Fragility Functions in JSON format converted from XML files distributed with FEMA PACT. The conversion was done using the [xmljson](https://pypi.org/project/xmljson/) python package using the [Parker](https://developer.mozilla.org/en-US/docs/Archive/JXON#The_Parker_Convention) convention. This convention ignores any attributes in the XML file. It seems currenlty this only affects the version attribute which is set in all files to 2.0. We may have to add this attribute later, if needed.

@@ -1,0 +1,67 @@
+{
+    "UniqueID": "da8d587a-b9ed-493b-9963-13e049958e8f",
+    "ID": "B2022.101",
+    "Description": "None",
+    "BasicUnit": "Each",
+    "Name": "Midrise stick-built curtain wall, Config: Symmetric insulating glass units (dual-pane, equal-thickness IGU), Lamination: Not laminated, Glass Type: Heat strengthened, Details: 1 in. (25 mm) HS IGU [1/4 in. (6 mm) inner and outer panes]; glass-frame clearance = 0.43 in. (11 mm); aspect ratio = 6:5 sealant = dry",
+    "Author": "By User",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:57.0745683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "User to provide median demand and dispersion values.  The values listed are default PACT values and do not represent the response of this component.  User to confirm damage state, repair, lead time, and casuatly data.\nImport errors:\n Warning, Data missing: B2022.101:DS1: Could not parse median - using 500\nWarning, Data missing: B2022.101:DS1: Could not parse dispersion - using 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "DATA NOT PROVIDED",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "DATA NOT KNOWN",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 20,
+                    "MaxAmount": 2055,
+                    "UpperQuantity": 100,
+                    "MinAmount": 1096,
+                    "Uncertainty": 0.1668,
+                    "CurveType": "LogNormal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 20,
+                    "MaxAmount": 5.3729,
+                    "UpperQuantity": 100,
+                    "MinAmount": 2.8908,
+                    "Uncertainty": 0.1521,
+                    "CurveType": "LogNormal"
+                }
+            },
+            "Median": 500,
+            "Beta": 0.5
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "UniqueID": "6ec97033-3c54-4a43-80df-4b989dcd3e31",
+    "ID": "B2023.031",
+    "Description": "None",
+    "BasicUnit": "Each",
+    "Name": "Storefront, Config: Monolithic, Lamination: Not laminated, Glass Type: Full tempered, Details: 3/8 in. (10 mm) FT monolithic, Planar Specimen; glass-frame clearance = 0.5 in. (13 mm); aspect ratio = 1.93:1 sealant = wet",
+    "Author": "By User",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:57.8025683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "User to provide median demand and dispersion values.  The values listed are default PACT values and do not represent the response of this component.  User to confirm damage state, repair, lead time, and casuatly data.  This component requires user specified cost and time consequence data.  Values within PACT are defaults (equal to zero) and do not represent actual consequence.\nImport errors:\n Warning, Data missing: B2023.031:DS1: Could not parse median - using 500\nWarning, Data missing: B2023.031:DS1: Could not parse dispersion - using 0.5\nWarning, Data missing: B2023.031:DS1:Time: Could not parse CurveType - Assuming Normal\nWarning, Data missing: B2023.031:DS1:Time: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: B2023.031:DS1:Time: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: B2023.031:DS1:Time: Could not parse Dispersion - Assuming 0.5\nWarning, Data missing: B2023.031:DS1:Cost: Could not parse CurveType - Assuming Normal\nWarning, Data missing: B2023.031:DS1:Cost: Could not parse Upper Quantity cost - Assuming 0\nWarning, Data missing: B2023.031:DS1:Cost: Could not parse Lower Quantity cost - Assuming 0\nWarning, Data missing: B2023.031:DS1:Cost: Could not parse Dispersion - Assuming 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "DATA NOT PROVIDED",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "DATA NOT KNOWN",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 1,
+                    "MaxAmount": 0,
+                    "UpperQuantity": 1,
+                    "MinAmount": 0,
+                    "Uncertainty": 0.5,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 500,
+            "Beta": 0.5
+        }
+    }
+}

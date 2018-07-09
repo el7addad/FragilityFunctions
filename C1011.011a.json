@@ -1,0 +1,151 @@
+{
+    "UniqueID": "c4840de6-e7aa-4aef-b59e-6da132ba089d",
+    "ID": "C1011.011a",
+    "Description": "Quantity is based upon 13'x100' Panels.  Quantity of wall damaged varies by damage state.",
+    "BasicUnit": "Each",
+    "Name": "Wall Partition, Type: Gypsum with wood studs, Full Height, Fixed Below, Fixed Above",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "NA"
+    },
+    "Official": false,
+    "DateCreated": "2012-09-27T16:36:29.8590302-07:00",
+    "Approved": false,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Cracking of paint over fasteners or joints",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Gypsum wallboard repaired by replacing the tape along the seam of two adjacent panels, applying new joint compound, sanding, and repainting.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 5100,
+                        "UpperQuantity": 10,
+                        "MinAmount": 5310,
+                        "Uncertainty": 0.398,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 13,
+                        "UpperQuantity": 10,
+                        "MinAmount": 11.3,
+                        "Uncertainty": 0.78,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0021,
+                "Beta": 0.6
+            },
+            {
+                "Name": null,
+                "Description": "Local and global buckling out-of-plane and crushing of gypsum wallboards.  Studs are typically not damaged by failure of the gypsum wallboard.",
+                "DamageImageName": null,
+                "DamageStates": {
+                    "DSGroupType": "MutuallyExclusive",
+                    "DamageState": [
+                        {
+                            "Name": null,
+                            "Description": "Local and global buckling out-of-plane and crushing of gypsum wallboards.  Studs are typically not damaged by failure of the gypsum wallboard.",
+                            "DamageImageName": null,
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Replace 25 feet of the affected panel along with the application of new tape, joint compound, followed by sanding and repainting.  Studs are not damaged.",
+                                "TagState": 0,
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0,
+                                "RedTagBeta": 0,
+                                "CostConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 19800,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 16900,
+                                    "Uncertainty": 0.0969,
+                                    "CurveType": "LogNormal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 56.1,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 46.5,
+                                    "Uncertainty": 0.0937,
+                                    "CurveType": "LogNormal"
+                                }
+                            },
+                            "Percent": 0.8
+                        },
+                        {
+                            "Name": null,
+                            "Description": "Local and global buckling out-of-plane and crushing of gypsum wallboards.  Studs are typically not damaged by failure of the gypsum wallboard.",
+                            "DamageImageName": null,
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Replace 100 feet of the affected panel along with the application of new tape, joint compound, followed by sanding and repainting.  Studs are not damaged.",
+                                "TagState": 0,
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0,
+                                "RedTagBeta": 0,
+                                "CostConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 30300,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 25200,
+                                    "Uncertainty": 0.146,
+                                    "CurveType": "LogNormal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 85.9,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 69.8,
+                                    "Uncertainty": 0.123,
+                                    "CurveType": "LogNormal"
+                                }
+                            },
+                            "Percent": 0.2
+                        }
+                    ]
+                },
+                "Median": 0.0071,
+                "Beta": 0.45
+            }
+        ]
+    }
+}

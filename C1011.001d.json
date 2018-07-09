@@ -1,0 +1,151 @@
+{
+    "UniqueID": "4e18f499-9107-434f-8e0a-fe80918c5ea1",
+    "ID": "C1011.001d",
+    "Description": "Quantity is based upon 13'x100' Panels.  Quantity of wall damaged varies by damage state.",
+    "BasicUnit": "Each",
+    "Name": "Wall Partition, Type: Gypsum with metal studs, Full Height, Fixed Below, Slip Track Above w/o returns (friction connections)",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "NA"
+    },
+    "Official": false,
+    "DateCreated": "2012-09-27T16:36:29.5470322-07:00",
+    "Approved": false,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Screws pop-out, minor cracking of wall board, warping or cracking of tape.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Retape joints, paste and repaint both sides of  10 foot length of wall board.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 547,
+                        "UpperQuantity": 10,
+                        "MinAmount": 531,
+                        "Uncertainty": 0.435,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 1.61,
+                        "UpperQuantity": 10,
+                        "MinAmount": 1.56,
+                        "Uncertainty": 0.435,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0035,
+                "Beta": 0.7
+            },
+            {
+                "Name": null,
+                "Description": "Moderate cracking or crushing of gypsum wall boards (typically in corners and in corners of openings).",
+                "DamageImageName": null,
+                "DamageStates": {
+                    "DSGroupType": "MutuallyExclusive",
+                    "DamageState": [
+                        {
+                            "Name": null,
+                            "Description": "Moderate cracking or crushing of gypsum wall boards (typically in corners and in corners of openings).",
+                            "DamageImageName": null,
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Remove 5 foot length of wall board (both sides), install new wall board (both sides),  tape, paste and repaint.",
+                                "TagState": 0,
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0,
+                                "RedTagBeta": 0,
+                                "CostConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 1040,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 864,
+                                    "Uncertainty": 0.193,
+                                    "CurveType": "LogNormal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 3.05,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 2.54,
+                                    "Uncertainty": 0.193,
+                                    "CurveType": "LogNormal"
+                                }
+                            },
+                            "Percent": 0.8
+                        },
+                        {
+                            "Name": null,
+                            "Description": "Moderate cracking or crushing of gypsum wall boards (typically in corners and in corners of openings).",
+                            "DamageImageName": null,
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Remove 25 foot length of wall board (both sides), install new wall board (both sides),  tape, paste and repaint.",
+                                "TagState": 0,
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0,
+                                "RedTagBeta": 0,
+                                "CostConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 3950,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 3380,
+                                    "Uncertainty": 0.0969,
+                                    "CurveType": "LogNormal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 1,
+                                    "MaxAmount": 11.6,
+                                    "UpperQuantity": 10,
+                                    "MinAmount": 9.95,
+                                    "Uncertainty": 0.0969,
+                                    "CurveType": "LogNormal"
+                                }
+                            },
+                            "Percent": 0.2
+                        }
+                    ]
+                },
+                "Median": 0.0093,
+                "Beta": 0.45
+            }
+        ]
+    }
+}

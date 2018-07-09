@@ -1,0 +1,113 @@
+{
+    "UniqueID": "92c2bca0-dfa0-469a-a53e-c46999c9db2d",
+    "ID": "D3041.103a",
+    "Description": "Costing is per unit.",
+    "BasicUnit": "Each",
+    "Name": "HVAC Fan - Capacity: all - Equipment that is either hard anchored or is vibration isolated with seismic snubbers/restraints - Anchorage fragility only",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:32.2985683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "User to provide median demand and dispersion values.  The values listed are default PACT values and do not represent the response of this component.\nImport errors:\n Warning, Data missing: D3041.103a:DS1: Could not parse median - using 500\nWarning, Data missing: D3041.103a:DS1: Could not parse dispersion - using 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Anchorage failure.",
+            "DamageImageName": "D3041.101a-DS1-1.JPG",
+            "DamageStates": {
+                "DSGroupType": "MutuallyExclusive",
+                "DamageState": [
+                    {
+                        "Name": null,
+                        "Description": "Anchorage failure.",
+                        "DamageImageName": "D3041.101a-DS1-1.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Repair anchorage and remount equipment.",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 3,
+                                "MaxAmount": 770,
+                                "UpperQuantity": 10,
+                                "MinAmount": 630,
+                                "Uncertainty": 0.3425,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 3,
+                                "MaxAmount": 2.2659,
+                                "UpperQuantity": 10,
+                                "MinAmount": 1.8541,
+                                "Uncertainty": 0.3421,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.7
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Anchorage failure & Equipment damaged beyond repair.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Repair anchorage and replace equipment.",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 3,
+                                "MaxAmount": 3685,
+                                "UpperQuantity": 10,
+                                "MinAmount": 3015,
+                                "Uncertainty": 0.1836,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 3,
+                                "MaxAmount": 10.8353,
+                                "UpperQuantity": 10,
+                                "MinAmount": 8.8647,
+                                "Uncertainty": 0.1838,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.3
+                    }
+                ]
+            },
+            "Median": 500,
+            "Beta": 0.5
+        }
+    }
+}

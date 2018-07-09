@@ -1,0 +1,113 @@
+{
+    "UniqueID": "29f0e7f4-e9c5-4aff-bca2-44d2e70a536e",
+    "ID": "F1012.001",
+    "Description": "Standard pallet back to back storage rack.  Three to five levels tall with total height from 15 to 20 ft.  Costing assumes one single side access rack.  Costing of rack and restocking based upon 50 LF of rack.  Costing of rack contents to be furnished by user.   ",
+    "BasicUnit": "Each",
+    "Name": "Storage racks designed and installed before 2007, big box retail (12' to 15' tall)",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Average",
+        "Rationality": "Average"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:49:03.0495683-07:00",
+    "Approved": true,
+    "Incomplete": true,
+    "Notes": "None\nImport errors:\n Warning: F1012.001:DS1:DS1: Could not parse Unsafe Placard Flag - Assuming no\nWarning, Data missing: F1012.001:DS1:DS1: Could not parse Casualty Affected Area - Using 0\nWarning, Data missing: F1012.001:DS1:DS1: Could not parse Casualty Injury Rate Median - Using 0\nWarning, Data missing: F1012.001:DS1:DS1: Could not parse Casualty Injury Rate Dispersion - Using 0.5\nWarning, Data missing: F1012.001:DS1:DS1: Could not parse Casualty Death Rate Median - Using 0\nWarning, Data missing: F1012.001:DS1:DS1: Could not parse Casualty Death Rate Dispersion - Using 0.5\nWarning: F1012.001:DS1:DS2: Could not parse Unsafe Placard Flag - Assuming no\nWarning, Data missing: F1012.001:DS1:DS2: Could not parse Casualty Affected Area - Using 0\nWarning, Data missing: F1012.001:DS1:DS2: Could not parse Casualty Injury Rate Median - Using 0\nWarning, Data missing: F1012.001:DS1:DS2: Could not parse Casualty Injury Rate Dispersion - Using 0.5\nWarning, Data missing: F1012.001:DS1:DS2: Could not parse Casualty Death Rate Median - Using 0\nWarning, Data missing: F1012.001:DS1:DS2: Could not parse Casualty Death Rate Dispersion - Using 0.5\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Significant merchandise shedding from rack shelves.",
+            "DamageImageName": "F1012.001-DS1-1.JPG",
+            "DamageStates": {
+                "DSGroupType": "MutuallyExclusive",
+                "DamageState": [
+                    {
+                        "Name": null,
+                        "Description": "Significant merchandise shedding from rack shelves.",
+                        "DamageImageName": "F1012.001-DS1-1.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Minor repair to storage rack.  Resort and restock shelves.  Clean up debris.  ",
+                            "TagState": 0,
+                            "UseCasualty": true,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0.5,
+                            "AffectedInjuryRateBeta": 0.5,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 4,
+                                "MaxAmount": 4030,
+                                "UpperQuantity": 20,
+                                "MinAmount": 2480,
+                                "Uncertainty": 0.3622,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 4,
+                                "MaxAmount": 14.2824,
+                                "UpperQuantity": 20,
+                                "MinAmount": 8.8118,
+                                "Uncertainty": 0.3685,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.6
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Significant structural damage to rack structure.",
+                        "DamageImageName": "F1012.001-DS2-1.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Remove and replace storage rack system.  Make minor repair to adjacent finishes.  Resort and restock shelves.  Clean up debris.  ",
+                            "TagState": 0,
+                            "UseCasualty": true,
+                            "LongLeadFlag": false,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0.5,
+                            "AffectedInjuryRateBeta": 0.5,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 4,
+                                "MaxAmount": 24245,
+                                "UpperQuantity": 20,
+                                "MinAmount": 14920,
+                                "Uncertainty": 0.2881,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 4,
+                                "MaxAmount": 85.7471,
+                                "UpperQuantity": 20,
+                                "MinAmount": 52.8353,
+                                "Uncertainty": 0.2873,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.4
+                    }
+                ]
+            },
+            "Median": 0.42,
+            "Beta": 0.4
+        }
+    }
+}

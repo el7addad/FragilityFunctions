@@ -1,0 +1,187 @@
+{
+    "UniqueID": "043a2f3e-f05a-428c-8b09-777289df9186",
+    "ID": "B1041.003a",
+    "Description": "ACI318 Concrete SMF, ductile response.  Meets the requirements of ACI318 SMF.  Costing is on a per joint basis.",
+    "BasicUnit": "Each",
+    "Name": "ACI 318 SMF , Conc Col & Bm = 36\" x 36\", Beam one side",
+    "Author": "Laura Lowes",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:42.9795683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "Note: DS4 is a copy of DS2 to create a mutually exclusive compliment to DS3.\nImport errors:\n Warning: B1041.003a: B1041.003a: DS1 overlaps DS2 in the range of 0.08 to 0.2 - Make sure damage states are minimally overlapping\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Beams or joints exhibit residual crack widths > 0.06 in.  No significant spalling.  No fracture or buckling of reinforcing.",
+                "DamageImageName": "B1041.001a-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove furnishings, ceilings and mechanical, electrical and plumbing systems (as necessary) 8 feet either side of damaged area.  Clean area adjacent to the damaged concrete.  Prepare spalled concrete and adjacent cracks, as necessary, to be patched and to receive the epoxy injection.  Patch concrete with grout. Replace and repair finishes.  Replace furnishings, ceilings and mechanical, electrical and plumbing systems as necessary.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 27846,
+                        "UpperQuantity": 20,
+                        "MinAmount": 17136,
+                        "Uncertainty": 0.3909,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 71.632,
+                        "UpperQuantity": 20,
+                        "MinAmount": 43.912,
+                        "Uncertainty": 0.3974,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.02,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Beams or joints exhibit residual crack widths > 0.06 in. Spalling of cover concrete exposes beam and joint transverse reinforcement but not longitudinal reinforcement. No fracture or buckling of reinforcing.",
+                "DamageImageName": "B1041.001a-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove furnishings, ceilings and mechanical, electrical and\nplumbing systems (as necessary) 15 feet either side of\ndamaged area. Shore damaged member(s) a min one level below (more levels may be required). Remove damaged concrete at least 1 inch beyond the exposed\nreinforcing steel. Place concrete forms. Place concrete.\nRemove forms. Remove shores after one week. Replace and\nrepair finishes. Replace furnishings, ceilings and mechanical,\nelectrical and plumbing systems (as necessary).",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 41378.4,
+                        "UpperQuantity": 20,
+                        "MinAmount": 29309.7,
+                        "Uncertainty": 0.3055,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 5,
+                        "MaxAmount": 106.8495,
+                        "UpperQuantity": 20,
+                        "MinAmount": 75.6129,
+                        "Uncertainty": 0.3097,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0275,
+                "Beta": 0.3
+            },
+            {
+                "Name": null,
+                "Description": "Beams or joints exhibit residual crack widths > 0.06 in. Spalling of cover concrete exposes a significant length of beam longitudinal reinforcement. Crushing of core concrete may occur. Fracture or buckling of reinf. requiring replacement may occur.",
+                "DamageImageName": "B1041.001a-DS3-1.JPG",
+                "DamageStates": {
+                    "DSGroupType": "MutuallyExclusive",
+                    "DamageState": [
+                        {
+                            "Name": null,
+                            "Description": "Beams or joints exhibit residual crack widths > 0.06 in. Spalling of cover concrete exposes a significant length of beam longitudinal reinforcement. Crushing of core concrete may occur. Fracture or buckling of reinf. requiring replacement may occur.",
+                            "DamageImageName": "B1041.001a-DS3-1.JPG",
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Remove furnishings, ceilings and mechanical, electrical and plumbing systems (as necessary) 15 feet either side of damaged component. Shore damaged member(s) a minimum of one level below (more levels may be required).  Remove damaged component.  Place and splice (as necessary) new reinforcing steel to existing, undamaged reinforcing.  Place concrete forms.  Place concrete.  Remove forms.  Remove shores after one week.  Replace and repair finishes.  Replace furnishings, ceilings and mechanical, electrical and plumbing systems (as necessary).\n",
+                                "TagState": "Red",
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0.2,
+                                "RedTagBeta": 0.5,
+                                "CostConsequence": {
+                                    "LowerQuantity": 5,
+                                    "MaxAmount": 49178.4,
+                                    "UpperQuantity": 20,
+                                    "MinAmount": 34834.7,
+                                    "Uncertainty": 0.2948,
+                                    "CurveType": "Normal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 5,
+                                    "MaxAmount": 127.2142,
+                                    "UpperQuantity": 20,
+                                    "MinAmount": 90.0893,
+                                    "Uncertainty": 0.2964,
+                                    "CurveType": "Normal"
+                                }
+                            },
+                            "Percent": 0.8
+                        },
+                        {
+                            "Name": null,
+                            "Description": "Beams or joints exhibit residual crack widths > 0.06 in. Spalling of cover concrete exposes beam and joint transverse reinforcement but not longitudinal reinforcement. No fracture or buckling of reinforcing.",
+                            "DamageImageName": "B1041.001a-DS2-1.JPG",
+                            "ConsequenceGroup": {
+                                "RepairMeasures": "Remove furnishings, ceilings and mechanical, electrical and plumbing systems (as necessary) 15 feet either side of damaged area.  Shore damaged member(s) a min one level below (more levels may be required).  Remove damaged concrete at least 1 inch beyond the exposed reinforcing steel.  Place concrete forms.  Place concrete.   Remove forms.  Remove shores after one week.  Replace and repair finishes.  Replace furnishings, ceilings and mechanical, electrical and plumbing systems (as necessary).",
+                                "TagState": 0,
+                                "UseCasualty": false,
+                                "LongLeadFlag": false,
+                                "AffectedFloorArea": null,
+                                "AffectedDeathRate": 0,
+                                "AffectedInjuryRate": 0,
+                                "AffectedDeathRateBeta": 0,
+                                "AffectedInjuryRateBeta": 0,
+                                "RedTagMedian": 0,
+                                "RedTagBeta": 0,
+                                "CostConsequence": {
+                                    "LowerQuantity": 5,
+                                    "MaxAmount": 41378.4,
+                                    "UpperQuantity": 20,
+                                    "MinAmount": 29309.7,
+                                    "Uncertainty": 0.3055,
+                                    "CurveType": "Normal"
+                                },
+                                "TimeConsequence": {
+                                    "LowerQuantity": 5,
+                                    "MaxAmount": 106.8495,
+                                    "UpperQuantity": 20,
+                                    "MinAmount": 75.6129,
+                                    "Uncertainty": 0.3097,
+                                    "CurveType": "Normal"
+                                }
+                            },
+                            "Percent": 0.2
+                        }
+                    ]
+                },
+                "Median": 0.05,
+                "Beta": 0.3
+            }
+        ]
+    }
+}

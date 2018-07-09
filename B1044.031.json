@@ -1,0 +1,105 @@
+{
+    "UniqueID": "629f8bed-4a12-4a24-83c9-488ccea0c0b6",
+    "ID": "B1044.031",
+    "Description": "Costing for each 144 ft^2 Wall Panel, Orthogonal web reinforcement, f'c > 2500 psi, P/(A*f'c) <= 0.2",
+    "BasicUnit": "Each",
+    "Name": "Low-rise reinforced concrete walls with return flanges, less than 8\" thick up to 15' high",
+    "Author": "Andrew Whittaker",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Average",
+        "DataRelevance": "Average",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:47.4735683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "Full repair description does not fully fit on sheet - consider shortening.  Description will fit in PACT.",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Crushed core concrete; localized concrete cracking with widths greater than 0.12 in; buckling of vertical rebar.",
+                "DamageImageName": "B1044.031-DS1-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Remove furnishings, ceilings and mechanical, electrical and plumping systems (as necessary) 5 feet either side of damaged area.  Replace and repair finishes.  Replace furnishings, ceilings and mechanical, electrical and plumping systems (as necessary).",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.5,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 7.8125,
+                        "MaxAmount": 16152.8832,
+                        "UpperQuantity": 26.0417,
+                        "MinAmount": 10768.5888,
+                        "Uncertainty": 0.1362,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 7.8125,
+                        "MaxAmount": 46.7981,
+                        "UpperQuantity": 26.0417,
+                        "MinAmount": 30.9619,
+                        "Uncertainty": 0.141,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0076,
+                "Beta": 0.35
+            },
+            {
+                "Name": null,
+                "Description": "Sliding of the wall resulting in large residual displacement; distributed concrete cracking with widths greater than 0.12 in; fracture of rebar.",
+                "DamageImageName": "B1044.031-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "(1) Relocate eqpt.& furniture within 10 ft. of wall, both sides.  Install protection on floor & adjacent walls.  (2) Remove wall finishes, both sides.  (3) Relocate MEP within 10 ft. of wall.  (4) Remove damaged wall in 5-ft.lengths.  (5) Install bars: a. 12#9 A706 bars in bz ea. end; mech splices to (E) ; b. #4 A706 dbl sets of seismic ties at 4 in. oc ea bz; c. #4 A706 bar at 6 in. oc, ewef; lap new vert. bars to (E) at top of wall; drill & epoxy bars into wall/fdn at 6 in. oc to match new rebar above.  Anchor horiz.  Bars in bz with seismic hks or lap 24 in. with (E) horiz. bars.  (6) Form wall.  Cast 5ksi concrete in 3-ft. lifts; with 1-in. top gap for grout day after casting.  (7) Remove forms, clean-up & reinstall/return eqpt, finishes, furniture & MEP.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.25,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 7.8125,
+                        "MaxAmount": 27498.24,
+                        "UpperQuantity": 26.0417,
+                        "MinAmount": 18332.16,
+                        "Uncertainty": 0.1776,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 7.8125,
+                        "MaxAmount": 81.1595,
+                        "UpperQuantity": 26.0417,
+                        "MinAmount": 54.2005,
+                        "Uncertainty": 0.1764,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 0.0134,
+                "Beta": 0.45
+            }
+        ]
+    }
+}

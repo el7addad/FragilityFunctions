@@ -1,0 +1,141 @@
+{
+    "UniqueID": "477d92f0-f623-449a-a7d7-3940c89da93d",
+    "ID": "B1033.032c",
+    "Description": "Costing is on a per bay basis.  Costing does not include fireproofing removal or reapplication cost.",
+    "BasicUnit": "Each",
+    "Name": "Special Concentric Braced Frame, design to AISC minimum standards, Single Diagonal Brace, Brace w > 100 PLF",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "Superior"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:47:40.1545683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None\nImport errors:\n Warning: B1033.032c: B1033.032c: DS2 overlaps DS3 in the range of 0.00185 to 0.00605 - Make sure damage states are minimally overlapping\n",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "Buckling of brace in excess of the brace depth.  Initiation of yielding and out-of-plane deformation of the gusset.  Initiation of cracking of welds of gusset.  Initiation of yielding in beams and columns adjacent to gusset.",
+                "DamageImageName": "B1033.001a-DS2-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Brace damage is largely aesthetic.  Heat straightening may be desirable but replacement would be for aesthetic reasons.  Gusset has minor loss of strength and stiffness and straightening or repair may be desirable aesthetic reasons.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.6,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 44150.9763,
+                        "UpperQuantity": 7,
+                        "MinAmount": 30022.6639,
+                        "Uncertainty": 0.3303,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 117.7372,
+                        "UpperQuantity": 7,
+                        "MinAmount": 80.0617,
+                        "Uncertainty": 0.3303,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0074,
+                "Beta": 0.3
+            },
+            {
+                "Name": null,
+                "Description": "Buckling of brace in excess of 2 time brace depth .  Yielding and out-of-plane deformation of gusset .  Cracking and tearing of welds and gussets adjacent to welds but crack length is less than critical for fracture .  Significant yielding and local buckling in beams and columns adjacent to gusset .  ",
+                "DamageImageName": "B1033.001a-DS3-1.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Brace has lost significant axial capacity, and replacement of HSS braces is likely required.  The gusset plate may have significant deformation and replacement may also be needed. Local beam and column yielding has occurred and straightening may be desirable for aesthetic reasons.",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.4,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 64770.7011,
+                        "UpperQuantity": 7,
+                        "MinAmount": 44044.0768,
+                        "Uncertainty": 0.289,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 172.7244,
+                        "UpperQuantity": 7,
+                        "MinAmount": 117.4534,
+                        "Uncertainty": 0.289,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0121,
+                "Beta": 0.25
+            },
+            {
+                "Name": null,
+                "Description": "Fracture of brace or gusset.  Buckling of gusset.  Severe yielding of beams and columns adjacent to the gusset with possibility of local buckling and cracking in the yielded areas.",
+                "DamageImageName": "B1033.011a-DS3-2.JPG",
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Brace and gusset are severely damaged with significant loss in stiffness and resistance, and both likely require replacement. Yielding and local buckling of beams and columns may be repaired by heat straightening, stiffeners or reinforcement, if there is no cracking or tearing. If cracking or tearing has initiated more substantial repair is needed",
+                    "TagState": "Red",
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0.2,
+                    "RedTagBeta": 0.5,
+                    "CostConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 71645.7011,
+                        "UpperQuantity": 7,
+                        "MinAmount": 48719.0768,
+                        "Uncertainty": 0.2813,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 3,
+                        "MaxAmount": 191.051,
+                        "UpperQuantity": 7,
+                        "MinAmount": 129.9134,
+                        "Uncertainty": 0.2814,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.0152,
+                "Beta": 0.35
+            }
+        ]
+    }
+}

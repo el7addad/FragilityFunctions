@@ -1,0 +1,188 @@
+{
+    "UniqueID": "702226b9-f9c7-4c36-ab33-180f5dff7472",
+    "ID": "D1014.011",
+    "Description": "Costing per elevator.  Elevator demand parameter shall be defined as the peak floor acceleration at the first floor.  The elevator fragility for a multiple story building should only be entered once on the first floor.",
+    "BasicUnit": "Each",
+    "Name": "Traction Elevator \u2013 Applies to most California Installations 1976 or later, most western states installations 1982 or later and most other U.S installations 1998 or later.",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "NA",
+        "DataRelevance": "NA",
+        "Documentation": "NA",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:11.2375683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Controller anchorage failed, and or machine anchorage failed, and or motor generator anchorage failed, and or governor anchorage failed, and or rope guard failures.",
+            "DamageImageName": "D1014.010-DS1-1.JPG",
+            "DamageStates": {
+                "DSGroupType": "Simultaneous",
+                "DamageState": [
+                    {
+                        "Name": null,
+                        "Description": "Controller anchorage failed, and or machine anchorage failed, and or motor generator anchorage failed, and or governor anchorage failed, and or rope guard failures.",
+                        "DamageImageName": "D1014.010-DS1-1.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Reinstall or replace controller (4%), and or reinstall or replace motor generator (63%), and or Install new generator with appropriate anchors (23%), and or Install new governor (7%), and or Reinstall or replace rope guards (15%).",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 1333,
+                                "UpperQuantity": 1,
+                                "MinAmount": 1333,
+                                "Uncertainty": 0.92,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 3.9,
+                                "UpperQuantity": 1,
+                                "MinAmount": 3.9,
+                                "Uncertainty": 0.92,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.26
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Rail distortion, and or intermediate bracket separate and spread, and or counterweight bracket break or bend, and or car bracket break or bend, and or car guide shoes damaged, and or counterweight guide shoes damaged, and or counterweight frame distortion, and or tail sheave dislodged and/or twisted",
+                        "DamageImageName": "D1014.010-DS2-6.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Replace rail (62%), and or replace bracket or tie rod (28%), and or replace counterweight bracket 14%), and or replace intermediate bracket (28%), and or replace car guide shoes (35%), and or replace counterweight guide shoe (28%), and or repair or replace counterweight frame (28%), and or repair or replace tail sheave (1%)",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 4630,
+                                "UpperQuantity": 1,
+                                "MinAmount": 4630,
+                                "Uncertainty": 0.27,
+                                "CurveType": "LogNormal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 13.6,
+                                "UpperQuantity": 1,
+                                "MinAmount": 13.6,
+                                "Uncertainty": 0.27,
+                                "CurveType": "LogNormal"
+                            }
+                        },
+                        "Percent": 0.79
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Cab stabilizers bent, or cab walls damaged, or cab doors damaged.",
+                        "DamageImageName": null,
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Repair or replace cab walls (3%), and or repair or replace cab doors (17%), and or repair or replace cab stabilizers (92%) ",
+                            "TagState": 0,
+                            "UseCasualty": false,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": null,
+                            "AffectedDeathRate": 0,
+                            "AffectedInjuryRate": 0,
+                            "AffectedDeathRateBeta": 0,
+                            "AffectedInjuryRateBeta": 0,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 4450,
+                                "UpperQuantity": 1,
+                                "MinAmount": 4450,
+                                "Uncertainty": 0.35,
+                                "CurveType": "Normal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 13.1,
+                                "UpperQuantity": 1,
+                                "MinAmount": 13.1,
+                                "Uncertainty": 0.35,
+                                "CurveType": "Normal"
+                            }
+                        },
+                        "Percent": 0.68
+                    },
+                    {
+                        "Name": null,
+                        "Description": "Cab ceiling damaged.",
+                        "DamageImageName": "D1014.010-DS4-1.JPG",
+                        "ConsequenceGroup": {
+                            "RepairMeasures": "Multiple repairs possible (% change of each):  Repair or replace cab ceiling (100%)",
+                            "TagState": 0,
+                            "UseCasualty": true,
+                            "LongLeadFlag": true,
+                            "AffectedFloorArea": {
+                                "Area": {
+                                    "Unit": "Square Foot",
+                                    "Value": 40
+                                }
+                            },
+                            "AffectedDeathRate": 0.05,
+                            "AffectedInjuryRate": 0.1,
+                            "AffectedDeathRateBeta": 0.5,
+                            "AffectedInjuryRateBeta": 0.5,
+                            "RedTagMedian": 0,
+                            "RedTagBeta": 0,
+                            "CostConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 200,
+                                "UpperQuantity": 1,
+                                "MinAmount": 2000,
+                                "Uncertainty": 0.49,
+                                "CurveType": "Normal"
+                            },
+                            "TimeConsequence": {
+                                "LowerQuantity": 1,
+                                "MaxAmount": 5.88,
+                                "UpperQuantity": 1,
+                                "MinAmount": 5.88,
+                                "Uncertainty": 0.49,
+                                "CurveType": "Normal"
+                            }
+                        },
+                        "Percent": 0.17
+                    }
+                ]
+            },
+            "Median": 0.39,
+            "Beta": 0.45
+        }
+    }
+}

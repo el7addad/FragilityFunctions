@@ -1,0 +1,67 @@
+{
+    "UniqueID": "0639522d-a8e4-44bf-bba8-29b40c04ba4a",
+    "ID": "C3011.001d",
+    "Description": "Costing based upon 9'x100' Panels",
+    "BasicUnit": "Each",
+    "Name": "Wall Partition, Type: Gypsum + Wallpaper, Full Height, Fixed Below, Slip Track Above w/o returns (friction connection)",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": true,
+    "EDPType": {
+        "Dimension": "NumLevels",
+        "TypeName": "Story Drift Ratio",
+        "DefaultUnits": "Radian",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Superior",
+        "DataRelevance": "Superior",
+        "Documentation": "Superior",
+        "Rationality": "NA"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:03.7905683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": false,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": {
+            "Name": null,
+            "Description": "Wall paper warped and torn.",
+            "DamageImageName": null,
+            "ConsequenceGroup": {
+                "RepairMeasures": "Remove existing wall paper (or wall) and install new wall paper for full 100 foot length of wall.  Existing wall damage per wall type NISTIR file.",
+                "TagState": 0,
+                "UseCasualty": false,
+                "LongLeadFlag": false,
+                "AffectedFloorArea": null,
+                "AffectedDeathRate": 0,
+                "AffectedInjuryRate": 0,
+                "AffectedDeathRateBeta": 0,
+                "AffectedInjuryRateBeta": 0,
+                "RedTagMedian": 0,
+                "RedTagBeta": 0,
+                "CostConsequence": {
+                    "LowerQuantity": 0.5556,
+                    "MaxAmount": 3510,
+                    "UpperQuantity": 5.5556,
+                    "MinAmount": 2160,
+                    "Uncertainty": 0.1542,
+                    "CurveType": "LogNormal"
+                },
+                "TimeConsequence": {
+                    "LowerQuantity": 0.5556,
+                    "MaxAmount": 11.3824,
+                    "UpperQuantity": 5.5556,
+                    "MinAmount": 7.4118,
+                    "Uncertainty": 0.0011,
+                    "CurveType": "Normal"
+                }
+            },
+            "Median": 0.0035,
+            "Beta": 0.7
+        }
+    }
+}

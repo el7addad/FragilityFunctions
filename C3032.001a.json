@@ -1,0 +1,146 @@
+{
+    "UniqueID": "ce689943-a676-4ca2-9bf9-e60f33790680",
+    "ID": "C3032.001a",
+    "Description": "Costing for each 250 SF Unit, Suspended Lay-in Acoustic Tile Ceiling, Support:  Vertical hanging wires only",
+    "BasicUnit": "Each",
+    "Name": "Suspended Ceiling, SDC A,B, Area (A): A < 250, Vert support only",
+    "Author": "Not Given",
+    "Correlation": 0,
+    "Directional": false,
+    "EDPType": {
+        "Dimension": "NumLevelsPlusOne",
+        "TypeName": "Acceleration",
+        "DefaultUnits": "g",
+        "UserDefined": false
+    },
+    "Ratings": {
+        "DataQuality": "Marginal",
+        "DataRelevance": "Superior",
+        "Documentation": "Marginal",
+        "Rationality": "Average"
+    },
+    "Official": true,
+    "DateCreated": "2012-10-12T16:48:08.1415683-07:00",
+    "Approved": true,
+    "Incomplete": false,
+    "Notes": "None",
+    "UseEDPValueOfFloorAbove": true,
+    "DamageStates": {
+        "DSGroupType": "Sequential",
+        "DamageState": [
+            {
+                "Name": null,
+                "Description": "5 % of tiles dislodge and fall.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Reinstall new acoustic tile for 5% or area.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 471.25,
+                        "UpperQuantity": 10,
+                        "MinAmount": 326.25,
+                        "Uncertainty": 0.5508,
+                        "CurveType": "Normal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 1.5912,
+                        "UpperQuantity": 10,
+                        "MinAmount": 1.1363,
+                        "Uncertainty": 0.5852,
+                        "CurveType": "Normal"
+                    }
+                },
+                "Median": 0.9,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "30% of tiles dislodge and fall and t-bar grid damaged.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Reinstall new acoustic tile and ceiling grids for 30% of area.",
+                    "TagState": 0,
+                    "UseCasualty": false,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": null,
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 3688.75,
+                        "UpperQuantity": 10,
+                        "MinAmount": 2553.75,
+                        "Uncertainty": 0.5183,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 11.6706,
+                        "UpperQuantity": 10,
+                        "MinAmount": 8.1098,
+                        "Uncertainty": 0.5127,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 1.5,
+                "Beta": 0.4
+            },
+            {
+                "Name": null,
+                "Description": "Total ceiling collapse.",
+                "DamageImageName": null,
+                "ConsequenceGroup": {
+                    "RepairMeasures": "Totally replace ceiling and grid.",
+                    "TagState": 0,
+                    "UseCasualty": true,
+                    "LongLeadFlag": false,
+                    "AffectedFloorArea": {
+                        "Area": {
+                            "Unit": "Square Foot",
+                            "Value": 250
+                        }
+                    },
+                    "AffectedDeathRate": 0,
+                    "AffectedInjuryRate": 0.1,
+                    "AffectedDeathRateBeta": 0,
+                    "AffectedInjuryRateBeta": 0.5,
+                    "RedTagMedian": 0,
+                    "RedTagBeta": 0,
+                    "CostConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 7588.75,
+                        "UpperQuantity": 10,
+                        "MinAmount": 5253.75,
+                        "Uncertainty": 0.2026,
+                        "CurveType": "LogNormal"
+                    },
+                    "TimeConsequence": {
+                        "LowerQuantity": 1,
+                        "MaxAmount": 23.7441,
+                        "UpperQuantity": 10,
+                        "MinAmount": 16.4186,
+                        "Uncertainty": 0.2034,
+                        "CurveType": "LogNormal"
+                    }
+                },
+                "Median": 2.2,
+                "Beta": 0.4
+            }
+        ]
+    }
+}
